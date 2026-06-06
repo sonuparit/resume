@@ -249,7 +249,7 @@
       </div>
       <ul>
         <li>
-          Implemented instant list generation for critical components to
+          Developed instant list generation for critical components to
           maintain aircraft availability, saving over 10 hours per day during the
           <code>Pulwama attack</code>.
           <strong>Commended by Officer Commanding</strong> for ensuring mission
@@ -314,28 +314,29 @@
           </div>
           <ul>
             <li>
-              Eliminated configuration drift across environments by designing reusable Helm charts, enabling consistent
-              GitOps-based application delivery through ArgoCD.
+              Eliminated <strong>configuration drift</strong> across multiple environments by designing reusable Helm
+              charts, enabling
+              consistent GitOps-based application delivery from a single source of truth through ArgoCD.
             </li>
             <li>
-              Designed GitOps workflows capable of managing deployments across multiple environments from a single
-              source of truth.
-            </li>
-            <li>
-              Designed persistent storage architecture for PostgreSQL and DynamoDB integration, ensuring application
+              Engineered <strong>persistent storage</strong> architecture for PostgreSQL and DynamoDB integration,
+              ensuring application
               state survived cluster recreation.
             </li>
             <li>
-              Eliminated security risks associated with embedded application credentials by integrating AWS Secrets
-              Manager and External Secrets Operator.
+              Eliminated security risks associated with embedded application credentials by integrating <strong>AWS
+                Secrets
+                Manager</strong> with <strong>External Secrets Operator</strong> and <strong>IMDSv2</strong>.
             </li>
             <li>
-              Optimized containers with AL2023-minimal, with full glibc and dnf
-              compatibility, decreasing size by <strong>17%</strong>
+              Reduced container footprint by <strong>17%</strong> using AL2023-minimal while maintaining full glibc and
+              dnf compatibility.
             </li>
             <li>
-              Implemented full monitoring and observability stack with Prometheus, Grafana, and Alertmanager, enabling
-              proactive detection of infrastructure and application issues via Email/Slack notifications.
+              Established full <strong>monitoring</strong> and <strong>observability</strong> stack with Prometheus,
+              Grafana, and Alertmanager, enabling
+              proactive detection of infrastructure and application issues via <strong>Email/Slack</strong>
+              notifications.
             </li>
           </ul>
         </li>
@@ -353,17 +354,17 @@
               troubleshooting.
             </li>
             <li>
-              Built reusable Terraform modules enabling consistent infrastructure provisioning across multiple
+              Built reusable Terraform modules for consistent infrastructure provisioning across multiple
               environments.
             </li>
             <li>
-              Eliminated manual container build and release processes by implementing automated CI workflow (detect →
+              Removed manual container build and release processes by implementing automated CI workflow (detect →
               build → tag → publish), improving deployment consistency and reducing manual intervention by
               ~<strong>20%</strong>
             </li>
             <li>
-              Implemented GitOps-driven deployment workflows using ArgoCD and branch-based promotion strategies,
-              reducing release friction and shortening delivery timelines by ~35%.
+              Developed GitOps-driven deployment workflows using ArgoCD and branch-based promotion strategies,
+              solving unintended pipeline triggers and shortening delivery timelines by <strong>~20%</strong>.
             </li>
           </ul>
         </li>
@@ -377,11 +378,12 @@
           </div>
           <ul>
             <li>
-              Addressed uncontrolled log growth and disk consumption risks by building a production-grade log lifecycle
-              management framework with validation, locking, scheduling, and safe rollback mechanisms.
+              Addressed uncontrolled <strong>log growth</strong> and disk consumption risks by building a
+              production-grade log lifecycle
+              management framework with validation, locking, scheduling, and safe dry-run mechanisms.
             </li>
             <li>
-              Implemented proactive disk and inode monitoring with Slack and email alerting, enabling earlier detection
+              Introduced proactive disk and inode monitoring with Slack and email alerting, enabling earlier detection
               of capacity issues and improving overall platform reliability.
             </li>
           </ul>
