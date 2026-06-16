@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sonu Parit | DevOps Engineer Resume</title>
+  <title>Sonu | DevOps Engineer Resume</title>
   <link rel="icon" type="image/png" href="./favicon.png">
   <style>
     @page {
@@ -32,7 +32,7 @@
 
       #resume {
         width: 210mm;
-        padding: 5mm 15mm 10mm 7mm;
+        padding: 10mm 18mm 10mm 10mm;
       }
     }
 
@@ -42,7 +42,7 @@
       justify-content: center;
       font-family: Arial, sans-serif, Calibri;
       margin: 20px;
-      line-height: 1.02;
+      line-height: 1.05;
       color: #444;
     }
 
@@ -81,14 +81,14 @@
 
     h2 {
       margin-top: 5px;
-      margin-bottom: 0px;
+      margin-bottom: 5px;
       color: #0082c8;
       border-bottom: 1px solid #0082c8;
-      font-size: 14pt;
+      font-size: 16pt;
     }
 
     p {
-      margin: 3px 0 0 0;
+      margin: 0;
       font-size: 12pt;
       text-align: justify;
     }
@@ -98,7 +98,7 @@
     } */
 
     .container-formatter {
-      margin: 0;
+      margin: 4px 0;
       text-align: justify;
     }
 
@@ -112,7 +112,7 @@
 
     ul,
     ol {
-      padding: 0 0 0 14pt;
+      padding: 1pt 0 2pt 14pt;
       margin: 0;
     }
 
@@ -122,20 +122,15 @@
     }
 
     .contact {
-      margin: 0px auto 0px auto;
+      margin: 0px auto 5px auto;
     }
 
     .highlight {
       font-weight: bold;
     }
 
-    .skills {
-      margin-top: 3px;
-    }
-
     .desig-div {
       display: flex;
-      margin: 3px 0 1px 0;
       /* font-size: 14pt; */
       justify-content: space-between;
       gap: 30px;
@@ -211,7 +206,7 @@
   <div class="resume-container" id="resume">
     <!-- Header with contact info -->
     <!-- <h1>Sonu – DevOps Engineer</h1> -->
-    <h1>Sonu Parit</h1>
+    <h1>Sonu</h1>
     <div class="contacts-container">
       <div class="contact">
         <a href="tel:+918374485176" class="">+91 8374485176</a>
@@ -232,12 +227,12 @@
       DevOps/SRE Engineer with a background in military aviation and an automation-first mindset. Skilled in Kubernetes,
       Terraform, AWS, Linux, and CI/CD pipelines. Built production-grade, cloud-native platforms with GitOps workflows,
       secrets management, persistent storage, and full observability stacks. Track record of eliminating bottlenecks,
-      reducing downtime, automating repetitive tasks, and designing reliable infrastructure.
+      reducing downtime, automating repetitive tasks, and designing reliable infrastructure from the ground up.
     </p>
 
     <!-- Key Skills -->
     <h2>Technical Skills</h2>
-    <ul class="skills">
+    <ul>
       <li><strong>DevOps & Cloud:</strong> Docker, Kubernetes, Helm, ArgoCD, GitHub Actions,
         Terraform, AWS (EKS, EC2, IAM, VPC, S3, ECR, Secrets Manager, Lambda)</li>
 
@@ -260,23 +255,37 @@
           aircraft, daily inspection checks, log card management, component
           servicing and replacement, and FDR data retrieval and analysis.
         </li>
-        <li>
-          On own initiative identified critical maintenance tracking gaps and developed a
-          VBA-based component lifecycle alerting system — generating real-time expiry lists
-          across all aircraft, reducing manual monitoring time by ~80%, and cutting the risk
-          of missed maintenance events by ~95%. Proved mission-critical during the Pulwama
-          attack, saving 10+ hours of daily manual checking and earning a commendation from
-          the OC.
-        </li>
-        <li>
-          Developed 5 VBA automation scripts covering ~80% of the MCC's repetitive maintenance tasks, reducing
-          overall manual workload by ~35%.
-        </li>
-        <li>
-          On own initiative diagnosed and restored 10 Display Mission Computers (DMCs)
-          deemed unrecoverable by the unit — increasing aircraft availability by 30% and recovering assets valued at
-          over ~$1.8M USD.
-        </li>
+        <div class="desig-div highlight initiative">
+          <div>On Own Initiative <a href="https://github.com/sonuparit/Aircraft-State-Management"
+              target="_blank">(link↗)</a></div>
+        </div>
+        <ul>
+
+          <li>
+            Identified critical maintenance tracking gaps and developed a
+            VBA-based component lifecycle alerting system — generating real-time expiry lists
+            across all aircraft, reducing manual monitoring time by ~80%, and cutting the risk
+            of missed maintenance events by ~95%. Proved mission-critical during the Pulwama
+            attack, saving 10+ hours of daily manual checking and earning a commendation from
+            the Officer Commanding.
+          </li>
+          <li>
+            Replaced paper-based record management by designing a searchable digital archival
+            system, cutting documentation time by ~35% and improving record retrieval speed
+            by ~70%.
+          </li>
+          <li>
+            Developed 5 VBA automation scripts covering ~80% of the unit's repetitive maintenance tasks, reducing
+            overall
+            manual workload by ~35%.
+          </li>
+          <li>
+            Diagnosed and restored 10 Display Mission Computers (DMCs)
+            deemed unrecoverable by the unit — increasing aircraft availability by 30% and recovering assets valued at
+            over ₹15 Crore (~$1.8M USD).
+          </li>
+        </ul>
+
       </ul>
       <div class="desig-div highlight">
         <div>Algo Trading (Self Employed) <a href="https://github.com/sonuparit/MT5-Custom-Trading-Indicators"
@@ -293,6 +302,11 @@
           Automated market analysis workflows using custom MT5 indicators and scripts,
           reducing human error by ~80% and improving decision-making consistency.
         </li>
+        <li>
+          Refactored MT5 indicators with multi-timeframe reconciliation logic, eliminating
+          inconsistent indicator behaviour across timeframes and reducing manual
+          intervention by ~35%.
+        </li>
       </ul>
       <div class="desig-div highlight">
         <div>DevOps Projects — Self-Directed Engineering Practice <a href="https://github.com/sonuparit"
@@ -307,8 +321,8 @@
         </li>
         <li>
           Built a complete observability stack — Prometheus and Grafana for metrics,
-          Loki for centralized logging, and Alertmanager for alert routing — providing real-time visibility
-          across 3 environments (dev, stage, prod).
+          Loki for centralized log aggregation, and Alertmanager for alert routing — providing real-time visibility
+          across 3 environments (dev, staging, production).
         </li>
       </ul>
     </div>
@@ -326,7 +340,7 @@
           </div>
           <ul>
             <li>
-              Eliminated configuration drift across 3 environments (dev, stage, prod) by designing reusable Helm
+              Eliminated configuration drift across 3 environments (dev, staging, production) by designing reusable Helm
               charts, enabling consistent GitOps-based application delivery from a single source of truth through
               ArgoCD.
             </li>
@@ -335,7 +349,7 @@
               data layer, ensuring full application state persisted through cluster recreation.
             </li>
             <li>
-              Externalized credentials by integrating External Secrets Operator (ESO) with AWS Secrets Manager,
+              Eliminated embedded credential risks by integrating External Secrets Operator with AWS Secrets Manager,
               using IMDSv2-based IAM authentication to securely inject secrets into application pods at runtime.
             </li>
             <li>
@@ -344,7 +358,7 @@
             </li>
             <li>
               Established a complete monitoring and observability stack with Prometheus, Grafana, Loki, and
-              Alertmanager, enabling proactive detection of infrastructure and application issues via Slack/Email
+              Alertmanager, enabling proactive detection of infrastructure and application issues via Slack and email
               alerts.
             </li>
           </ul>
@@ -359,12 +373,14 @@
           </div>
           <ul>
             <li>
-              Decomposed a single-pass Terraform deployment into dependency-aware provisioning stages, reducing
-              provisioning complexity, simplifying troubleshooting, and enabling consistent infrastructure deployment.
+              Re-architected a monolithic Terraform configuration into reusable modules, reducing provisioning
+              complexity, simplifying troubleshooting, and enabling consistent infrastructure deployment across 3
+              environments.
             </li>
             <li>
               Eliminated manual container build and release processes by implementing an automated CI workflow (trigger
-              → build → tag → publish), removing human error and accelerating deployment by ~20%.
+              → build → tag → publish), removing human error from the build pipeline and reducing overall manual
+              intervention by ~20%.
             </li>
             <li>
               Implemented GitOps-driven deployment workflows using ArgoCD ApplicationSet
@@ -385,10 +401,10 @@
           <ul>
             <li>
               Addressed uncontrolled log growth and disk exhaustion risks by building a production-grade log lifecycle
-              management framework — driven by a .env config file for portable, codeless customization of log
-              paths (including Docker and Kubernetes directories), cron scheduling, with end-to-end pre-execution
-              validation, script locking, logging, idempotent cron management (self-registration/removal), and dry-run
-              mode.
+              management framework — driven by a .env configuration file for portable, codeless customization of log
+              paths (including Docker and Kubernetes directories), cron scheduling with end-to-end pre-execution
+              validation, script locking, logging, idempotent cron management (self-registration and removal), and safe
+              dry-run mode.
             </li>
             <li>
               Introduced proactive disk and inode monitoring with Slack and email alerting —
