@@ -42,7 +42,7 @@
       justify-content: center;
       font-family: Arial, sans-serif, Calibri;
       margin: 20px;
-      line-height: 1.05;
+      line-height: 1.04;
       color: #444;
     }
 
@@ -118,11 +118,14 @@
 
     .contacts-container {
       display: flex;
+      flex-direction: column;
       justify-content: center;
+      align-items: center;
+      margin: 0px;
     }
 
     .contact {
-      margin: 0px auto 5px auto;
+      margin: 0;
     }
 
     .highlight {
@@ -214,6 +217,9 @@
     <h1>Sonu Parit</h1>
     <div class="contacts-container">
       <div class="contact">
+        DevOps / Cloud Engineer | Delhi NCR | Noida | Gurugram
+      </div>
+      <div class="contact">
         <a href="tel:+918374485176" class="">+91 8374485176</a>
         |
         <a href="mailto:sonu.parit1@gmail.com" class="">sonu.parit1@gmail.com</a>
@@ -238,7 +244,8 @@
     <!-- Key Skills -->
     <h2>TECHNICAL SKILLS</h2>
     <ul class="skills">
-      <li><strong>DevOps & Cloud:</strong> Docker, Kubernetes, Terraform, Helm, ArgoCD, GitHub Actions, CI/CD, GitOps,
+      <li><strong>DevOps & Cloud:</strong> Docker, Kubernetes, Terraform, Helm, ArgoCD, YAML, GitHub Actions, CI/CD,
+        GitOps,
         Infrastructure as Code (IaC), AWS (EKS, EC2, IAM, VPC, S3, ECR, Secrets Manager, Lambda)</li>
 
       <li><strong>Observability & Monitoring:</strong> Prometheus, Grafana, Loki, Alertmanager</li>
@@ -251,8 +258,8 @@
     <h2>EXPERIENCE</h2>
     <div class="container-formatter">
       <div class="desig-div highlight">
-        <div>DevOps Projects — Self-Directed Engineering Practice <a href="https://github.com/sonuparit"
-            target="_blank">(GitHub↗)</a></div>
+        <div>DevOps Engineer | Self-Directed Engineering Practice <a href="https://github.com/sonuparit"
+            target="_blank">(GitHub)</a></div>
         <div>Aug 2025 - Present</div>
       </div>
       <ul>
@@ -264,14 +271,14 @@
           completing full deployments in under 8 minutes per release.
         </li>
         <li>
-          Built a complete observability stack — Prometheus and Grafana for metrics,
-          Loki for centralized logging, and Alertmanager for alert routing — providing real-time visibility
+          Built a complete observability stack, Prometheus and Grafana for metrics,
+          Loki for centralized logging, and Alertmanager for alert routing, providing real-time visibility
           across 3 environments (dev, stage, prod).
         </li>
       </ul>
       <div class="desig-div highlight">
         <div>Algo Trading (Self Employed) <a href="https://github.com/sonuparit/MT5-Custom-Trading-Indicators"
-            target="_blank">(link↗)</a></div>
+            target="_blank">(link)</a></div>
         <div>Aug 2022 - Jul 2025</div>
       </div>
       <ul>
@@ -287,7 +294,7 @@
       </ul>
       <div class="desig-div highlight">
         <div>Indian Army (Aviation Technician) <a href="https://github.com/sonuparit/Aircraft-State-Management"
-            target="_blank">(link↗)</a>
+            target="_blank">(link)</a>
         </div>
         <div>Jun 2014 - Jul 2022</div>
       </div>
@@ -298,9 +305,9 @@
           servicing and replacement, and FDR data retrieval and analysis.
         </li>
         <li>
-          On own initiative identified critical maintenance tracking gaps and designed a
-          VBA-based lifecycle alerting system — generating real-time component expiry lists
-          across all aircrafts, reducing manual monitoring time by ~80%, and cutting the risk
+          On own initiative, identified critical maintenance tracking gaps and designed a
+          VBA-based lifecycle alerting system, generating real-time component expiry lists
+          across all aircraft, reducing manual monitoring time by ~80%, and cutting the risk
           of missed maintenance events by ~98%. Proved mission-critical during the Pulwama
           attack, saving 10+ hours of daily manual checking and earning a commendation from
           the OC.
@@ -310,8 +317,8 @@
           generation task, reducing overall manual workload from 2 hours to half an hour (~75%).
         </li> -->
         <li>
-          On own initiative diagnosed and restored 10 Display Mission Computers (DMCs)
-          deemed unrecoverable by the unit — increasing aircraft availability by 50% and recovering assets valued at
+          On own initiative, diagnosed and restored 10 Display Mission Computers (DMCs)
+          deemed unrecoverable by the unit, increasing aircraft availability by 50% and recovering assets valued at
           over ~$1.8M USD.
         </li>
       </ul>
@@ -325,7 +332,7 @@
         <li>
           <div class="desig-div highlight">
             <div>Productionizing a Microservices Application (Reverse-Engineered) <a
-                href="https://github.com/sonuparit/retail-store-reverse-engineered" target="_blank">(link↗)</a></div>
+                href="https://github.com/sonuparit/retail-store-reverse-engineered" target="_blank">(link)</a></div>
             <div>Mar 2026 - Present</div>
           </div>
           <ul>
@@ -339,8 +346,9 @@
               data layer, ensuring 0 data loss during cluster recreation.
             </li>
             <li>
-              Externalized credentials by integrating External Secrets Operator (ESO) with AWS Secrets Manager,
-              using IMDSv2-based IAM authentication to securely inject 4+ secrets into application pods at runtime.
+              Externalized 100% of hardcoded credentials by integrating External Secrets Operator with AWS Secrets
+              Manager
+              and IMDSv2-based IAM authentication.
             </li>
             <li>
               Reduced container image size by 17% by switching to Amazon Linux 2023 minimal (AL2023-minimal) base
@@ -357,13 +365,14 @@
         <li>
           <div class="desig-div highlight">
             <div>Reverse-engineered Terraform and built GitOps-Driven CI/CD pipeline <a
-                href="https://github.com/sonuparit/terraform-gitops-pipeline" target="_blank">(link↗)</a></div>
+                href="https://github.com/sonuparit/terraform-gitops-pipeline" target="_blank">(link)</a></div>
             <div>Feb 2026 - Mar 2026</div>
           </div>
           <ul>
             <li>
               Decomposed a single-pass Terraform deployment into 4 dependency-aware provisioning stages, reducing
-              provisioning complexity, simplifying troubleshooting scope by ~75%, and consistent infra deployment.
+              provisioning complexity and troubleshooting scope by ~75%, and enabling consistent infra
+              deployment.
             </li>
             <li>
               Eliminated manual container build and release processes by implementing an automated CI workflow (trigger
@@ -371,7 +380,7 @@
             </li>
             <li>
               Implemented GitOps-driven deployment workflows using ArgoCD ApplicationSet
-              with a dedicated `gitops` branch as the single deployment trigger — isolating
+              with a dedicated `gitops` branch as the single deployment trigger, isolating
               all 3 environments (dev/stage/prod) via folder-based Helm values files, ensuring
               main branch changes never unintentionally trigger deployments.
             </li>
@@ -382,7 +391,7 @@
         <li>
           <div class="desig-div highlight">
             <div>Production-Grade Log Management & Cleanup Automation <a
-                href="https://github.com/sonuparit/prod-log-cleanup" target="_blank">(link↗)</a></div>
+                href="https://github.com/sonuparit/prod-log-cleanup" target="_blank">(link)</a></div>
             <div>Jan 2026 - Feb 2026</div>
           </div>
           <ul>
@@ -393,9 +402,9 @@
               validation, script locking, dry-run support, and idempotent scheduling.
             </li>
             <li>
-              Introduced disk and inode monitoring with Slack and email alerting —
-              including low-yield cleanup warnings (< 100MB) threshold — enabling early detection of capacity issues
-                before they impact platform stability. </li>
+              Introduced disk and inode monitoring with Slack and email alerting,
+              including low-yield cleanup warnings below 100MB threshold, enabling early detection of capacity issues
+              before they impact platform stability. </li>
           </ul>
         </li>
       </ol>
