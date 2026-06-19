@@ -42,7 +42,8 @@
       justify-content: center;
       font-family: Arial, sans-serif, Calibri;
       margin: 20px;
-      line-height: 1.04;
+      font-size: 11.5pt;
+      line-height: 1.1;
       color: #444;
     }
 
@@ -73,46 +74,41 @@
     }
 
     h1 {
-      font-size: 24pt;
+      font-size: 20pt;
       color: #0082c8;
       /*color: #005b8c;*/
       text-align: center;
     }
 
     h2 {
-      margin-top: 8px;
+      margin-top: 5px;
       margin-bottom: 0px;
       color: #0082c8;
       border-bottom: 1px solid #0082c8;
-      font-size: 14pt;
+      font-size: 12pt;
     }
 
     p {
       margin: 3px 0 0 0;
-      font-size: 12pt;
-      text-align: justify;
+      /* text-align: justify; */
     }
-
-    /* a {
-      text-decoration: none;
-    } */
 
     .container-formatter {
       margin: 0;
-      text-align: justify;
+      /* text-align: justify; */
     }
 
     .initiative {
-      margin-top: 5px;
+      margin-top: 3px;
     }
 
-    li {
+    /* li {
       text-align: justify;
-    }
+    } */
 
     ul,
     ol {
-      padding: 0 0 0 14pt;
+      padding: 0 0 0 20pt;
       margin: 0;
     }
 
@@ -121,7 +117,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin: 0px;
+      margin: 0 0 8px 0;
     }
 
     .contact {
@@ -138,8 +134,23 @@
 
     .desig-div {
       display: flex;
-      margin: 5px 0 3px 0;
-      /* font-size: 14pt; */
+      margin: 3px 0 0 0;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .desig-div a {
+      text-decoration: none;
+      font-weight: 100;
+    }
+
+    .education {
+      margin: 3px 0 0 0;
+    }
+
+    .edu-div {
+      display: flex;
+      margin: 0;
       justify-content: space-between;
       gap: 30px;
     }
@@ -251,94 +262,90 @@
 
       <li><strong>Observability & Monitoring:</strong> Prometheus, Grafana, Loki, Alertmanager</li>
 
-      <li><strong>Scripting & Systems:</strong> Python, Bash, JavaScript, Linux Administration (Xubuntu daily driver),
-        Networking</li>
+      <li><strong>Systems Engineering:</strong> Python, Bash, JavaScript, Linux Administration (Xubuntu daily
+        driver),
+        Networking, Troubleshooting, Root Cause Analysis (RCA), Incident Response, Production Support
+      </li>
     </ul>
 
     <!-- Projects -->
     <h2>PROJECTS</h2>
     <div class="container-formatter">
-      <ol>
-        <!--- 1st project -->
+      <!--- 1st project -->
+      <div class="desig-div highlight">
+        <div>Productionizing a Microservices Application (Reverse-Engineered) <a
+            href="https://github.com/sonuparit/retail-store-reverse-engineered" target="_blank">(GitHub)</a></div>
+        <div>Mar 2026 - Present</div>
+      </div>
+      <ul>
         <li>
-          <div class="desig-div highlight">
-            <div>Productionizing a Microservices Application (Reverse-Engineered) <a
-                href="https://github.com/sonuparit/retail-store-reverse-engineered" target="_blank">(link)</a></div>
-            <div>Mar 2026 - Present</div>
-          </div>
-          <ul>
-            <li>
-              Removed configuration drift across all 3 environments by designing reusable Helm
-              charts, enabling consistent GitOps-based application delivery from a single source of truth through
-              ArgoCD.
-            </li>
-            <li>
-              Engineered Kubernetes PersistentVolume architecture for PostgreSQL and integrated DynamoDB as a managed
-              data layer, ensuring 0 data loss during cluster recreation.
-            </li>
-            <li>
-              Externalized 100% of hardcoded credentials by integrating External Secrets Operator with AWS Secrets
-              Manager
-              and IMDSv2-based IAM authentication.
-            </li>
-            <li>
-              Reduced container image size by 17% by switching to Amazon Linux 2023 minimal (AL2023-minimal) base
-              images, while maintaining full glibc and dnf compatibility.
-            </li>
-            <li>
-              Established a complete monitoring and observability stack with Prometheus, Grafana, Loki, and
-              Alertmanager, across 3 environments, enabling early infra/application issues via Slack and email alerts.
-            </li>
-          </ul>
+          Removed configuration drift across development, staging, and production environments by designing reusable
+          Helm charts with Lua-based health checks, enabling layered, dependency-aware GitOps deployments from a
+          single source of truth through ArgoCD.
         </li>
-
-        <!--- 2nd project -->
         <li>
-          <div class="desig-div highlight">
-            <div>Reverse-engineered Terraform and built GitOps-Driven CI/CD pipeline <a
-                href="https://github.com/sonuparit/terraform-gitops-pipeline" target="_blank">(link)</a></div>
-            <div>Feb 2026 - Mar 2026</div>
-          </div>
-          <ul>
-            <li>
-              Decomposed a single-pass Terraform deployment into 4 dependency-aware provisioning stages, reducing
-              provisioning complexity and troubleshooting scope by ~75%, and enabling consistent infra
-              deployment.
-            </li>
-            <li>
-              Eliminated manual container build and release processes by implementing an automated CI workflow (trigger
-              → build → tag → publish), removing human error and accelerating deployment by ~20%.
-            </li>
-            <li>
-              Implemented GitOps-driven deployment workflows using ArgoCD ApplicationSet
-              with a dedicated `gitops` branch as the single deployment trigger, isolating
-              all 3 environments (dev/stage/prod) via folder-based Helm values files, ensuring
-              main branch changes never unintentionally trigger deployments.
-            </li>
-          </ul>
+          Engineered Kubernetes PersistentVolume architecture for PostgreSQL and integrated DynamoDB as a managed
+          data layer, ensuring 0 data loss during cluster recreation.
         </li>
-
-        <!--- last project -->
         <li>
-          <div class="desig-div highlight">
-            <div>Production-Grade Log Management & Cleanup Automation <a
-                href="https://github.com/sonuparit/prod-log-cleanup" target="_blank">(link)</a></div>
-            <div>Jan 2026 - Feb 2026</div>
-          </div>
-          <ul>
-            <li>
-
-              Mitigated disk exhaustion risks by ~50% by building a production-grade log lifecycle framework, automating
-              cleanup across Docker, Kubernetes, and System log paths and enabling safe unattended execution through
-              validation, script locking, dry-run support, and idempotent scheduling.
-            </li>
-            <li>
-              Introduced disk and inode monitoring with Slack and email alerting,
-              including low-yield cleanup warnings below 100MB threshold, enabling early detection of capacity issues
-              before they impact platform stability. </li>
-          </ul>
+          Externalized 100% of hardcoded credentials by integrating External Secrets Operator with AWS Secrets
+          Manager
+          and IMDSv2-based IAM authentication.
         </li>
-      </ol>
+        <li>
+          Reduced container image size by 17% by switching to Amazon Linux 2023 minimal (AL2023-minimal) base
+          images, while maintaining full glibc and dnf compatibility.
+        </li>
+        <li>
+          Established a complete monitoring and observability stack with Prometheus, Grafana, Loki, and
+          Alertmanager, across 3 environments, enabling early infra/application issues via Slack and email alerts.
+        </li>
+      </ul>
+
+      <!--- 2nd project -->
+      <div class="desig-div highlight">
+        <div>Reverse-engineered Terraform and built GitOps-Driven CI/CD pipeline <a
+            href="https://github.com/sonuparit/terraform-gitops-pipeline" target="_blank">(GitHub)</a>
+        </div>
+        <div>Feb 2026 - Mar 2026</div>
+      </div>
+      <ul>
+        <li>
+          Decomposed a single-pass Terraform deployment into 4 dependency-aware provisioning stages, reducing
+          provisioning complexity and troubleshooting scope by ~75%, and enabling consistent infra
+          deployment.
+        </li>
+        <li>
+          Eliminated manual container build and release processes by implementing an automated CI workflow (trigger
+          → build → tag → publish), removing human error and accelerating deployment by ~20%.
+        </li>
+        <li>
+          Implemented GitOps-driven deployment workflows using ArgoCD ApplicationSet
+          with a dedicated `gitops` branch as the single deployment trigger, isolating
+          all 3 environments (dev/stage/prod) via folder-based Helm values files, ensuring
+          main branch changes never unintentionally trigger deployments.
+        </li>
+      </ul>
+
+      <!--- last project -->
+      <div class="desig-div highlight">
+        <div>Production-Grade Log Management & Cleanup Automation
+          <a href="https://github.com/sonuparit/prod-log-cleanup" target="_blank">(GitHub)</a>
+        </div>
+        <div>Jan 2026 - Feb 2026</div>
+      </div>
+      <ul>
+        <li>
+
+          Mitigated disk exhaustion risks by ~50% by building a production-grade log lifecycle framework, automating
+          cleanup across Docker, Kubernetes, and System log paths and enabling safe unattended execution through
+          validation, script locking, dry-run support, and idempotent scheduling.
+        </li>
+        <li>
+          Introduced disk and inode monitoring with Slack and email alerting,
+          including low-yield cleanup warnings below 100MB threshold, enabling early detection of capacity issues
+          before they impact platform stability. </li>
+      </ul>
     </div>
 
     <!-- Experience -->
@@ -346,7 +353,8 @@
     <div class="container-formatter">
       <div class="desig-div highlight">
         <div>DevOps Engineer | Self-Directed Engineering Practice <a href="https://github.com/sonuparit"
-            target="_blank">(GitHub)</a></div>
+            target="_blank">(GitHub)</a>
+        </div>
         <div>Aug 2025 - Present</div>
       </div>
       <ul>
@@ -365,7 +373,8 @@
       </ul>
       <div class="desig-div highlight">
         <div>Algo Trading (Self Employed) <a href="https://github.com/sonuparit/MT5-Custom-Trading-Indicators"
-            target="_blank">(link)</a></div>
+            target="_blank">(GitHub)</a>
+        </div>
         <div>Aug 2022 - Jul 2025</div>
       </div>
       <ul>
@@ -381,7 +390,7 @@
       </ul>
       <div class="desig-div highlight">
         <div>Indian Army (Aviation Technician) <a href="https://github.com/sonuparit/Aircraft-State-Management"
-            target="_blank">(link)</a>
+            target="_blank">(GitHub)</a>
         </div>
         <div>Jun 2014 - Jul 2022</div>
       </div>
@@ -413,13 +422,15 @@
 
     <!-- Education -->
     <h2>EDUCATION</h2>
-    <div class="desig-div highlight">
-      <div>Linux Administration Course (Distinction) (Indian Army)</div>
-      <div>Aug 2018 - Sep 2018</div>
-    </div>
-    <div class="desig-div highlight">
-      <div>BCA, Christ College, Rajkot (3 Semesters)</div>
-      <div>Jul 2012 - Dec 2013</div>
+    <div class="education">
+      <div class="edu-div">
+        <div>Linux Administration Course (Distinction) (Indian Army)</div>
+        <div>Aug 2018 - Sep 2018</div>
+      </div>
+      <div class="edu-div">
+        <div>BCA, Christ College, Rajkot (3 Semesters)</div>
+        <div>Jul 2012 - Dec 2013</div>
+      </div>
     </div>
   </div>
   <script>
