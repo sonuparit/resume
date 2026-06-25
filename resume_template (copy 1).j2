@@ -1,0 +1,69 @@
+<!-- Header -->
+<h1>{{ personal.name }}</h1>
+<div class="contacts-container">
+  <div class="contact">
+    {{ personal.title }} | {{ personal.locations | join(" | ") }}
+  </div>
+  <div class="contact">
+    <a href="tel:{{ personal.phone }}">{{ personal.phone }}</a> |
+    <a href="mailto:{{ personal.email }}">{{ personal.email }}</a> |
+    <a href="{{ personal.linkedin }}" target="_blank">{{ personal.linkedin }}</a> |
+    <a href="{{ personal.github }}" target="_blank">{{ personal.github }}</a> |
+    <a href="{{ personal.portfolio }}" target="_blank">portfolio</a>
+  </div>
+</div>
+
+<h2>PROFILE SUMMARY</h2>
+<p>{{ summary }}</p>
+
+<h2>TECHNICAL SKILLS</h2>
+<ul class="skills">
+  <li><strong>DevOps & Cloud:</strong> {{ skills.devops_cloud | join(", ") }}</li>
+  <li><strong>Configuration Management & IaC:</strong> {{ skills.iac | join(", ") }}</li>
+  <li><strong>Observability & Monitoring:</strong> {{ skills.observability | join(", ") }}</li>
+  <li><strong>Systems Engineering:</strong> {{ skills.systems | join(", ") }}</li>
+</ul>
+
+<h2>PROJECTS</h2>
+<div class="container-formatter">
+{% for project in projects %}
+  <div class="desig-div highlight">
+    <div>{{ project.name }}
+      <a href="{{ project.github }}" target="_blank">(GitHub)</a>
+    </div>
+    <div>{{ project.start }} - {{ project.end }}</div>
+  </div>
+  <ul>
+  {% for bullet in project.bullets %}
+    <li>{{ bullet.text.strip() }}</li>
+  {% endfor %}
+  </ul>
+{% endfor %}
+</div>
+
+<h2>EXPERIENCE</h2>
+<div class="container-formatter">
+{% for exp in experience %}
+  <div class="desig-div highlight">
+    <div>{{ exp.company }} | {{ exp.organization }}
+      <a href="{{ exp.github }}" target="_blank">(GitHub)</a>
+    </div>
+    <div>{{ exp.start }} - {{ exp.end }}</div>
+  </div>
+  <ul>
+  {% for bullet in exp.bullets %}
+    <li>{{ bullet.text.strip() }}</li>
+  {% endfor %}
+  </ul>
+{% endfor %}
+</div>
+
+<h2>EDUCATION</h2>
+<div class="education">
+{% for edu in education %}
+  <div class="edu-div">
+    <div>{{ edu.degree }}{% if edu.details %}, {{ edu.details }}{% endif %} ({{ edu.institute }})</div>
+    <div>{{ edu.start }} - {{ edu.end }}</div>
+  </div>
+{% endfor %}
+</div>

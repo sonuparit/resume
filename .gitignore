@@ -1,0 +1,16 @@
+# Virtual environment
+.venv/
+local-env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Output files
+output/
+
+# VSCode settings
+.vscode/
+
+# OS files
+.DS_Store
