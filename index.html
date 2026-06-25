@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sonu Parit | DevOps Engineer Resume</title>
+  <link rel="icon" type="image/png" href="./favicon.png">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <!--- note for viewers --->
+  <div class="user-note">
+    <p>
+      For pdf version, please click on the "Resume" button at the bottom right
+      corner.
+    </p>
+  </div>
+
+  <!--- download button --->
+  <a href="#" onclick="
+        printResume();
+        return false;
+      " class="floating-download">
+    <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" viewBox="0 0 16 16">
+      <path
+        d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293z" />
+      <path
+        d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z" />
+    </svg>
+    <span>Resume</span>
+  </a>
+
+  <!--- resume content --->
+  <div class="resume-container" id="resume">
+    <!-- Header with contact info -->
+    <!-- <h1>Sonu – DevOps Engineer</h1> -->
+    <h1>Sonu Parit</h1>
+    <div class="contacts-container">
+      <div class="contact">
+        DevOps / Cloud / SRE Engineer | Delhi NCR | Noida | Gurugram
+      </div>
+      <div class="contact">
+        <a href="tel:+918374485176" class="">+91 8374485176</a>
+        |
+        <a href="mailto:sonu.parit1@gmail.com" class="">sonu.parit1@gmail.com</a>
+        |
+        <a href="https://linkedin.com/in/sonuparit" target="_blank" class="">linkedin.com/in/sonuparit</a>
+        |
+        <a href="https://github.com/sonuparit" target="_blank" class="">github.com/sonuparit</a>
+        |
+        <a href="https://sonuparit.github.io/" target="_blank" class="">portfolio</a>
+      </div>
+    </div>
+
+    <!-- Profile Summary -->
+    <h2>PROFILE SUMMARY</h2>
+    <p>
+      DevOps Engineer with a background in military aviation and an automation-first mindset. Skilled in Kubernetes,
+      Terraform, AWS, Linux, and CI/CD pipelines. Built production-grade, cloud-native platforms with GitOps workflows,
+      secrets management, persistent storage, and full observability stacks. Track record of eliminating bottlenecks,
+      reducing downtime, automating repetitive tasks, and designing reliable infrastructure solutions.
+    </p>
+
+    <!-- Key Skills -->
+    <h2>TECHNICAL SKILLS</h2>
+    <ul class="skills">
+      <li><strong>DevOps & Cloud:</strong> Docker, Docker Compose, Kubernetes, Helm, ArgoCD, YAML, GitHub
+        Actions, CI/CD, Jenkins, GitOps, SQL, AWS (EKS, EC2, IAM, VPC, S3, ECR, AWS Secrets Manager, Lambda, Cloud
+        Watch)
+      </li>
+
+      <li><strong>Configuration Management & IaC:</strong> Terraform, Ansible, Infrastructure as Code </li>
+
+      <li><strong>Observability & Monitoring:</strong> Prometheus, Grafana, Loki, Alertmanager, Exporters </li>
+
+      <li><strong>Systems Engineering:</strong> Python, Bash, JavaScript, Linux Administration (Xubuntu daily
+        driver), Networking, Troubleshooting, Root Cause Analysis (RCA), Incident Response, Production Support
+      </li>
+    </ul>
+
+    <!-- Projects -->
+    <h2>PROJECTS</h2>
+    <div class="container-formatter">
+      <!--- 1st project -->
+      <div class="desig-div highlight">
+        <div>Productionizing a Microservices Application (Reverse-Engineered) <a
+            href="https://github.com/sonuparit/retail-store-reverse-engineered" target="_blank">(GitHub)</a></div>
+        <div>Mar 2026 - Present</div>
+      </div>
+      <ul>
+        <li>
+          Removed configuration drift across development, staging, and production environments by designing reusable
+          Helm charts with Lua-based health checks, enabling layered, dependency-aware GitOps deployments from a
+          single source of truth through ArgoCD.
+        </li>
+        <li>
+          Engineered Kubernetes PersistentVolume architecture for PostgreSQL and integrated DynamoDB as a managed
+          data layer, ensuring 0 data loss during cluster recreation.
+        </li>
+        <li>
+          Externalized 100% of hardcoded credentials by integrating External Secrets Operator with AWS Secrets
+          Manager
+          and IMDSv2-based IAM authentication.
+        </li>
+        <li>
+          Reduced container image size by 17% by switching to Amazon Linux 2023 minimal (AL2023-minimal) base
+          images, while maintaining full glibc and dnf compatibility.
+        </li>
+        <li>
+          Established a complete monitoring and observability stack with Prometheus, Grafana, Loki, and
+          Alertmanager, across 3 environments, enabling early infra/application issues via Slack and email alerts.
+        </li>
+      </ul>
+
+      <!--- 2nd project -->
+      <div class="desig-div highlight">
+        <div>Reverse-engineered Terraform and built GitOps-Driven CI/CD pipeline <a
+            href="https://github.com/sonuparit/terraform-gitops-pipeline" target="_blank">(GitHub)</a>
+        </div>
+        <div>Feb 2026 - Mar 2026</div>
+      </div>
+      <ul>
+        <li>
+          Decomposed a single-pass Terraform deployment into 4 dependency-aware provisioning stages, reducing
+          provisioning complexity and troubleshooting scope by ~75%, and enabling consistent infra
+          deployment.
+        </li>
+        <li>
+          Eliminated manual container build and release processes by implementing an automated CI workflow (trigger
+          → build → tag → publish), removing human error and accelerating deployment by ~20%.
+        </li>
+        <li>
+          Implemented GitOps-driven deployment workflows using ArgoCD ApplicationSet
+          with a dedicated `gitops` branch as the single deployment trigger, isolating
+          all 3 environments (dev/stage/prod) via folder-based Helm values files, ensuring
+          main branch changes never unintentionally trigger deployments.
+        </li>
+      </ul>
+
+      <!--- last project -->
+      <div class="desig-div highlight">
+        <div>Production-Grade Log Management & Cleanup Automation
+          <a href="https://github.com/sonuparit/prod-log-cleanup" target="_blank">(GitHub)</a>
+        </div>
+        <div>Jan 2026 - Feb 2026</div>
+      </div>
+      <ul>
+        <li>
+
+          Mitigated disk exhaustion risks by ~50% by building a production-grade log lifecycle framework, automating
+          cleanup across Docker, Kubernetes, and System log paths and enabling safe unattended execution through
+          validation, script locking, dry-run support, and idempotent scheduling.
+        </li>
+        <li>
+          Introduced disk and inode monitoring with Slack and email alerting,
+          including low-yield cleanup warnings below 100MB threshold, enabling early detection of capacity issues
+          before they impact platform stability. </li>
+      </ul>
+    </div>
+
+    <!-- Experience -->
+    <h2>EXPERIENCE</h2>
+    <div class="container-formatter">
+      <div class="desig-div highlight">
+        <div>DevOps Engineer | Self-Directed Engineering Practice <a href="https://github.com/sonuparit"
+            target="_blank">(GitHub)</a>
+        </div>
+        <div>Aug 2025 - Present</div>
+      </div>
+      <ul>
+        <li>
+          Deployed a production-grade, 5-microservice based application on Terraform-provisioned AWS EKS.
+        </li>
+        <li>
+          Automated an end-to-end CI/CD pipeline using ArgoCD for GitOps-based continuous delivery,
+          completing full deployments in under 8 minutes per release.
+        </li>
+        <li>
+          Built a complete observability stack, Prometheus and Grafana for metrics,
+          Loki for centralized logging, and Alertmanager for alert routing, providing real-time visibility
+          across 3 environments (dev, stage, prod).
+        </li>
+      </ul>
+      <div class="desig-div highlight">
+        <div>Algo Trading (Self Employed) <a href="https://github.com/sonuparit/MT5-Custom-Trading-Indicators"
+            target="_blank">(GitHub)</a>
+        </div>
+        <div>Aug 2022 - Jul 2025</div>
+      </div>
+      <ul>
+        <li>
+          Developed an MT5 script for real-time, multi-object synchronization across
+          multiple open charts of the same forex pair on any timeframe, improving
+          multi-chart analysis efficiency by 75%.
+        </li>
+        <li>
+          Automated market analysis workflows by creating 10+ custom MT5 indicators and scripts according to needs,
+          reducing human error by ~80% and improving decision-making consistency.
+        </li>
+      </ul>
+      <div class="desig-div highlight">
+        <div>Indian Army (Aviation Technician) <a href="https://github.com/sonuparit/Aircraft-State-Management"
+            target="_blank">(GitHub)</a>
+        </div>
+        <div>Jun 2014 - Jul 2022</div>
+      </div>
+      <ul>
+        <li>
+          Responsible for preventive and corrective maintenance of military
+          aircraft, daily inspection checks, log card management, component
+          servicing and replacement, and FDR data retrieval and analysis.
+        </li>
+        <li>
+          On own initiative, identified critical maintenance tracking gaps and designed a
+          VBA-based lifecycle alerting system, generating real-time component expiry lists
+          across all aircraft, reducing manual monitoring time by ~80%, and cutting the risk
+          of missed maintenance events by ~98%. Proved mission-critical during the Pulwama
+          attack, saving 10+ hours of daily manual checking and earning a commendation from
+          the OC.
+        </li>
+        <!-- <li>
+          Crafted 5 VBA automation scripts covering ~80% of the MCC's repetitive aircraft-serviceability report
+          generation task, reducing overall manual workload from 2 hours to half an hour (~75%).
+        </li> -->
+        <li>
+          On own initiative, diagnosed and restored 10 Display Mission Computers (DMCs)
+          deemed unrecoverable by the unit, increasing aircraft availability by 50% and recovering assets valued at
+          over ~$1.8M USD.
+        </li>
+      </ul>
+    </div>
+
+    <!-- Education -->
+    <h2>EDUCATION</h2>
+    <div class="education">
+      <div class="edu-div">
+        <div>Linux Administration Course (Distinction) (Indian Army)</div>
+        <div>Aug 2018 - Sep 2018</div>
+      </div>
+      <div class="edu-div">
+        <div>BCA, Christ College, Rajkot (3 Semesters)</div>
+        <div>Jul 2012 - Dec 2013</div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function printResume() {
+      document.title = "Sonu_DevOps_Resume";
+      window.print();
+    }
+  </script>
+</body>
+
+</html>

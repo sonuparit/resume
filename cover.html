@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sonu Parit | DevOps Engineer Cover</title>
+  <link rel="icon" type="image/png" href="./cover.png">
+  <style>
+    @page {
+      size: A4;
+      margin: 0;
+      padding: 0;
+    }
+
+    @media print {
+      body {
+        margin: 0;
+      }
+
+      .user-note {
+        display: none !important;
+      }
+
+      .floating-download {
+        display: none !important;
+      }
+
+      .cover-container {
+        border: none !important;
+      }
+
+      #cover {
+        width: 210mm;
+        padding: 10mm 20mm 10mm 12mm;
+      }
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-family: Arial, sans-serif, Calibri;
+      margin: 20px;
+      line-height: 1.05;
+      color: #444;
+    }
+
+    .cover-container {
+      max-width: 800px;
+      min-width: 400px;
+      padding: 40px;
+      background: white;
+      margin: auto;
+      border: 2px solid #333;
+    }
+
+    .user-note {
+      max-width: 800px;
+      min-width: 400px;
+      padding: 20px 40px;
+      background: #fffae6;
+      color: #333;
+      border: 2px solid #ffb3b3;
+      border-radius: 8px;
+      margin: 20px auto 30px auto;
+    }
+
+    h1,
+    h2 {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    h1 {
+      font-size: 24pt;
+      color: #0082c8;
+      /*color: #005b8c;*/
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      color: #0082c8;
+      border-bottom: 1px solid #0082c8;
+      font-size: 16pt;
+    }
+
+    p {
+      margin: 0;
+      font-size: 12pt;
+      text-align: justify;
+    }
+
+    .container-formatter {
+      margin: 4px 0;
+      text-align: justify;
+    }
+
+    li {
+      text-align: justify;
+    }
+
+    ul,
+    ol {
+      padding: 1pt 0 2pt 14pt;
+      margin: 0;
+    }
+
+    .contacts-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .contact {
+      margin: 0px auto 5px auto;
+    }
+
+    .highlight {
+      font-weight: bold;
+    }
+
+    .desig-div {
+      display: flex;
+      /* font-size: 14pt; */
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    /* <!--- download button ---> */
+    .floating-download {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      padding: 12px 16px;
+      border-radius: 50px;
+
+      background: #007ac6;
+      color: white;
+      text-decoration: none;
+
+      font-weight: 600;
+      font-size: 14px;
+
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+      z-index: 1000;
+      transition: all 0.25s ease;
+
+      cursor: pointer;
+
+      box-shadow: 0 8px 20px rgba(0, 122, 198, 0.4);
+    }
+
+    .download-icon {
+      width: 24px;
+      height: 24px;
+      fill: currentColor;
+    }
+
+    .floating-download:hover {
+      transform: translateY(-3px) scale(1.05);
+      background: #005386;
+    }
+  </style>
+</head>
+
+<body>
+  <!--- note for viewers --->
+  <div class="user-note">
+    <p>
+      For pdf version, please click on the ".pdf" button at the bottom right
+      corner.
+    </p>
+  </div>
+
+  <!--- download button --->
+  <a href="#" onclick="
+        printCover();
+        return false;
+      " class="floating-download">
+    <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" viewBox="0 0 16 16">
+      <path
+        d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293z" />
+      <path
+        d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z" />
+    </svg>
+    <span>.pdf</span>
+  </a>
+
+  <!--- cover letter content --->
+  <div class="cover-container" id="cover">
+    <p>Sonu Parit</p>
+    <p>DevOps Engineer</p>
+    <p>Badarpur Border, New Delhi 110044</p>
+    <p><a href="tel:+918374485176" class="">+91 8374485176</a>
+      | <a href="mailto:sonu.parit1@gmail.com" class="">sonu.parit1@gmail.com</a></p>
+    <p><a href="https://github.com/sonuparit" target="_blank" class="">github</a>
+      | <a href="https://www.linkedin.com/in/sonuparit/" target="_blank" class="">Linkedin</a>
+      | <a href="https://sonuparit.github.io/" target="_blank" class="">portfolio</a></p>
+
+    <br>
+
+    <p>14 June 2026</p>
+
+    <br>
+
+    <p>Servesh Jain</p>
+    <p>Co-founder & CTO</p>
+    <p>Kayzen</p>
+    <p>Bangalore, India</p>
+
+    <br>
+
+    <p>Dear Servesh Jain,</p>
+
+    <br>
+
+    <p>I am excited to apply for the DevOps Engineer position at Kayzen. What particularly attracted me to Kayzen is the
+      scale and engineering mindset behind the platform. Processing billions of requests, operating private data centers
+      across the globe, and treating infrastructure as a programmable platform rather than manually managed servers
+      represent the kind of engineering challenges that inspire me and I'm excited to contribute to solving them.
+    </p>
+
+    <br>
+
+    <p>Throughout my career, I have always been driven by solving problems and eliminating manual work. During my time
+      in Army Aviation, I designed systems that improved aircraft readiness, reduced operational overhead, and increased
+      reliability under high-pressure conditions. Later, while working independently in trading and automation, I
+      continuously built tools and workflows to reduce human error and improve consistency. Today, that same mindset
+      drives my work in DevOps.</p>
+
+    <br>
+
+    <p>What I believe makes me valuable is not that I know every technology listed in a job description. It is that I
+      genuinely enjoy diving into unfamiliar problems. Throughout my life, I have repeatedly entered domains I had no
+      prior experience in, learned them deeply, and implemented practical solutions. I am comfortable stepping outside
+      my comfort zone, investigating complex systems, and working independently until I understand how things work. I
+      have built production-style projects using Kubernetes, Terraform, AWS, GitHub Actions, ArgoCD, Prometheus
+      and Grafana. I enjoy understanding how systems work beneath the surface and designing reliable,
+      observable, and automated solutions. </p>
+
+    <br>
+
+    <p>While I am still early in my professional DevOps journey, I am eager to learn, contribute, and grow alongside a
+      team that solves technically challenging problems. I am not afraid of new technologies, new
+      tools, or new ideas. In fact, learning and implementing them is one of the most enjoyable parts of engineering for
+      me. I would be grateful for the opportunity to contribute to Kayzen and continue growing as an engineer while
+      helping build reliable, automated, and scalable infrastructure.</p>
+
+    <br>
+
+    <p>
+      Thank you for your time and consideration.
+    </p>
+
+    <br>
+
+    <p>Sincerely,</p>
+
+    <br>
+
+    <p>Sonu Parit</p>
+
+    <script>
+      function printCover() {
+        document.title = "Sonu_DevOps_Cover";
+        window.print();
+      }
+    </script>
+  </div>
+</body>
+
+</html>
