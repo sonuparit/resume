@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sonu Parit | DevOps Engineer Resume</title>
+  <link rel="icon" type="image/png" href="../data/favicon.png">
+  <link rel="stylesheet" href="../data/styles.css">
+</head>
+
+<body>
+  <!--- note for viewers --->
+  <div class="user-note">
+    <p>
+      For pdf version, please click on the "Resume" button at the bottom right
+      corner.
+    </p>
+  </div>
+
+  <!--- download button --->
+  <a href="#" onclick="
+        printResume();
+        return false;
+      " class="floating-download">
+    <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" viewBox="0 0 16 16">
+      <path
+        d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293z" />
+      <path
+        d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z" />
+    </svg>
+    <span>Resume</span>
+  </a>
+
+  <!--- resume content --->
+  <div class="resume-container" id="resume">
+    <!-- Header with contact info -->
+    <!-- <h1>Sonu – DevOps Engineer</h1> -->
+    <h1>{{ personal.name }}</h1>
+    <div class="contacts-container">
+      <div class="contact">
+        {{ personal.title }} | {{ personal.locations | join(" | ") }}
+      </div>
+      <div class="contact">
+        <a href="tel:{{ personal.phone }}">{{ personal.phone }}</a> |
+        <a href="mailto:{{ personal.email }}">{{ personal.email }}</a> |
+        <a href="{{ personal.linkedin }}" target="_blank">{{ personal.linkedin }}</a> |
+        <a href="{{ personal.github }}" target="_blank">{{ personal.github }}</a> |
+        <a href="{{ personal.portfolio }}" target="_blank">portfolio</a>
+      </div>
+    </div>
+
+    <h2>PROFILE SUMMARY</h2>
+    <p>{{ summary }}</p>
+
+    <h2>TECHNICAL SKILLS</h2>
+    <ul class="skills">
+      <li><strong>DevOps & Cloud:</strong> {{ skills.devops_cloud | join(", ") }}</li>
+      <li><strong>Configuration Management & IaC:</strong> {{ skills.iac | join(", ") }}</li>
+      <li><strong>Observability & Monitoring:</strong> {{ skills.observability | join(", ") }}</li>
+      <li><strong>Systems Engineering:</strong> {{ skills.systems | join(", ") }}</li>
+    </ul>
+
+    <h2>PROJECTS</h2>
+    <div class="container-formatter">
+      {% for project in projects %}
+      <div class="desig-div highlight">
+        <div>{{ project.name }}
+          <a href="{{ project.github }}" target="_blank">(GitHub)</a>
+        </div>
+        <div>{{ project.start }} - {{ project.end }}</div>
+      </div>
+      <ul>
+        {% for bullet in project.bullets %}
+        <li>{{ bullet.text.strip() }}</li>
+        {% endfor %}
+      </ul>
+      {% endfor %}
+    </div>
+
+    <h2>EXPERIENCE</h2>
+    <div class="container-formatter">
+      {% for exp in experience %}
+      <div class="desig-div highlight">
+        <div>{{ exp.company }} | {{ exp.organization }}
+          <a href="{{ exp.github }}" target="_blank">(GitHub)</a>
+        </div>
+        <div>{{ exp.start }} - {{ exp.end }}</div>
+      </div>
+      <ul>
+        {% for bullet in exp.bullets %}
+        <li>{{ bullet.text.strip() }}</li>
+        {% endfor %}
+      </ul>
+      {% endfor %}
+    </div>
+
+    <h2>EDUCATION</h2>
+    <div class="education">
+      {% for edu in education %}
+      <div class="edu-div">
+        <div>{{ edu.degree }}{% if edu.details %}, {{ edu.details }}{% endif %} ({{ edu.institute }})</div>
+        <div>{{ edu.start }} - {{ edu.end }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  <script>
+    function printResume() {
+      document.title = "Sonu_DevOps_Resume";
+      window.print();
+    }
+  </script>
+</body>
+
+</html>

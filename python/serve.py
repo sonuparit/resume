@@ -13,9 +13,9 @@ build()
 server = Server()
 
 # Watch files
-server.watch("resume.yaml", build)
-server.watch("resume_template.j2", build)
-server.watch("styles.css")
+server.watch("../data/resume.yaml", build)
+server.watch("../data/template.j2", build)
+server.watch("../data/styles.css")
 
 # Serve output directory
-server.serve(root="output")
+server.serve(root="../")
