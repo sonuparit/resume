@@ -29,7 +29,9 @@ Hey chatGPT!
 
 -------------------JD END-------------------
 
-Purpose 1:
+Prompt 1:
+
+Purpose:
 I want to understand what kind of person would be best fit for the company, and how I can present myself as one.
 
 Role:
@@ -46,13 +48,15 @@ Keep it simple, clear, and actionable. Do not exceed the brief requirements.
 
 ---
 
-Purpose 2:
+Prompt 2:
 
 Role:
-Create a downloadable `jd-keywords.yaml` file, that contains the Highest-priority ATS "keywords", and "phrases with 2-3 words", that you as an employer is looking for, that can pass your ATS.
+Act as the Hiring Manager, Senior DevOps Engineer, and Recruiter responsible for filling this role.
+
+Purpose:
+Create a downloadable `jd-keywords.yaml` file, that contains the Highest-priority ATS "keywords", and "phrases with 2-3 words", that you are looking for in your JD, that can pass your ATS.
 
 Rules for file creation:
-
 1. Extract keywords and phrases exactly as they appear in the JD. Do not introduce new technologies, certifications, tools, or skills that are absent from the JD.
 2. Do not infer synonyms, abbreviations, or equivalent technologies. Preserve abbreviations exactly as written.
 3. Do not create, infer, duplicate, or reword keywords or phrases. Every output entry must originate from JD.

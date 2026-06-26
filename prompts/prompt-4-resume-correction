@@ -10,6 +10,7 @@ Before sending this prompt, make sure I have provided:
 Files
 □ jd-keywords.yaml
 □ resume.yaml
+□ my-skills.yaml
 ══════════════════════════════════════════════
 
 Hey ChatGPT!
@@ -35,7 +36,7 @@ Requirements:
   * `experience.bullets.text`
   
 4. Never add, delete, rename, reorder, merge, split, abbreviate, paraphrase, or regenerate content. Copy unchanged lines verbatim from the source file.
-5. Never fabricate experience, responsibilities, technologies, projects, certifications, employers, metrics, or achievements.
+5. Never fabricate experience, responsibilities, technologies, projects, certifications, employers, metrics, or achievements which are not present in `my-skills.yaml`.
 6. Preserve valid YAML syntax. Use `<s>...</s>` to mark non-relevant content.
 
 Transformation rules:

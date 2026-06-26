@@ -15,7 +15,7 @@ Files
 Hey chatgpt!
 
 Purpose:
-I want to know exactly which keywords or phrases are absent in my resume, so that, I can put them, to increase my chances to pass the ATS filter.
+I want to know exactly which keywords or phrases are absent in my resume, so that, I can put them in my resume, to increase my chances to pass the ATS filter.
 
 Instructions:
 
@@ -25,7 +25,7 @@ Rules for file creation:
 
 1. Use `jd-keywords.yaml` file as actual ATS filter.
 2. A keyword or phrase is considered present only if it appears explicitly in `resume.yaml` file. Do not infer synonyms, abbreviations, or equivalent technologies.
-3. Do not duplicate keywords and phrases.
+3. Do not duplicate keywords and phrases. Preserve abbreviations exactly as written.
 4. Preserve the exact spelling and capitalization from `jd-keywords.yaml`.
 5. Keep the format for `missing-keywords.yaml` file, like this:
 
