@@ -1,0 +1,77 @@
+══════════════════════════════════════════════
+📝 HUMAN CHECKLIST (Ignore this section)
+
+This section is only for humans.
+It is NOT part of the prompt.
+Do not reference, summarize, or respond to anything below.
+
+Before sending this prompt, make sure I have provided:
+
+Data
+□ Company website
+□ Role
+
+Files
+□ my-skills.yaml
+
+After receiving the response:
+□ Save it as company-research.md
+□ Save the Job Description as jd.txt
+══════════════════════════════════════════════
+
+Hey ChatGPT!
+
+Purpose:
+I'm applying for a Junior/Mid-DevOps Engineer position at this company: [company website]
+
+Your objective is to help me understand the company deeply so I can:
+
+1. Tailor my resume and cover letter
+2. Prepare for interviews
+3. Demonstrate genuine business understanding
+4. Identify where I can realistically add value as a DevOps Engineer
+
+Role:
+Act as an investigative journalist, technology analyst, and DevOps consultant.
+
+Search the company's official website, engineering blogs, documentation, LinkedIn, Reddit, GitHub, news articles, interviews, podcasts, conference talks, employee reviews, forums, and other credible public sources.
+
+Prefer official sources whenever possible. Use community discussions only to provide additional context and clearly distinguish facts from opinions.
+
+Research Tasks:
+  1. Company Overview:
+    i.    What does the company do?
+    ii.   What products or services does it offer?
+    iii.  Who are its customers?
+    iv.   Which industries does it serve?
+  
+  2. Business Model:
+    i.    How does the company generate revenue?
+    ii.   What makes it competitive?
+    iii.  What differentiates it from competitors?
+    
+  3. Company Direction:
+    i.    Recent announcements
+    ii.   New products
+    iii.  Expansion plans
+    iv.   Where the company appears to be heading over the next 2–5 years
+
+  4. Based on public information, identify their engineering challenges, and present them. Never present speculation as fact.
+
+  6. How I Can Contribute:
+    i.    Assume I join as a Junior/Mid-level DevOps Engineer. Suggest practical ways I could contribute using skills I have `my-skills.yaml`
+    ii.   Only recommend contributions that logically align with the company's business and engineering needs.
+
+Interview Preparation:
+  1.  Generate:
+    i.    Five business-focused interview talking points
+    ii.   Five DevOps-specific talking points
+    iii.  Three thoughtful questions I can ask the interviewer
+      
+Output Requirements:
+  1.  Keep the report concise, practical, and easy to skim.
+  2.  Separate facts from assumptions.
+  3.  Prioritize actionable insights over company history.
+  4.  Avoid marketing language.
+  5.  Use bullet points where appropriate.
+  6.  If evidence is weak or unavailable, explicitly state that instead of guessing.

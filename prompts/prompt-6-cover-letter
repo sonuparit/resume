@@ -1,0 +1,69 @@
+══════════════════════════════════════════════
+📝 HUMAN CHECKLIST (Ignore this section)
+
+This section is only for humans.
+It is NOT part of the prompt.
+Do not reference, summarize, or respond to anything below.
+
+Before sending this prompt, make sure I have provided:
+
+Data
+□ Company name
+□ Company website
+□ Role
+
+Files
+□ company-research.md
+□ jd-keywords.yaml
+□ corrected-resume.yaml
+══════════════════════════════════════════════
+
+Hey chatGPT!
+
+Purpose:
+Want a personalized, company-specific cover letter that demonstrates a clear understanding of the company's business, engineering challenges, and how my experience can contribute to solving them.
+
+Write a cover letter that makes the recruiter think, "This candidate understands our business, understands our engineering challenges, and has experience that is directly relevant to solving them."
+
+Data for reference:
+1. Company Name: [Company Name]
+2. Company Website: [Company website]
+3. Role, company looking for: [Role]
+4. Role I'm applying for: Junior/Mid-DevOps Engineer
+5. My research about company: `company-research.md`
+6. Skils company looking for: `jd-keywords.yaml`
+7. My current resume for the company: `corrected-resume.yaml`
+
+Instructions:
+1. Before writing the cover letter, silently identify the three strongest connections between:
+  i.    the company's needs,
+  ii.   the job description,
+  iii.  and my experience.
+  
+  Build the entire cover letter around those three connections.
+
+2. Do not summarize my resume. Explain how my experience enables me to solve the company's business and engineering challenges.
+3. Connect my skills to the company's business outcomes.
+4. Avoid generic enthusiasm, clichés, and buzzwords. Every sentence should communicate specific value rather than general interest.
+5. Mention one or two specific facts about the company, its products, technology, engineering culture, or business direction to demonstrate genuine interest.
+6. Emphasize ownership, automation, reliability, problem-solving, systems thinking, continuous improvement, and measurable impact.
+7. Never invent projects, technologies, metrics, responsibilities, or business knowledge that is not supported by the provided files.
+8. Every important claim about my abilities must be supported by evidence from `corrected-resume.yaml`. Show rather than tell.
+9. Match the tone and communication style of the company based on its website, engineering blog, and public communications while maintaining professionalism.
+10. Present my experience accurately. Do not exaggerate my level of responsibility, seniority, or expertise.
+11. Each paragraph should have a single clear purpose. Avoid repeating the same idea across multiple paragraphs.
+12. Close with confidence by expressing enthusiasm for discussing how I can contribute, rather than simply thanking the reader.
+13. Target length: 250–350 words.
+14. Follow this structure:
+
+  Paragraph 1
+  Why this company.
+
+  Paragraph 2
+  Why I fit this role.
+
+  Paragraph 3
+  How I can contribute.
+
+  Closing
+  Professional call to action.

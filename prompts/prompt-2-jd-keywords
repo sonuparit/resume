@@ -1,0 +1,73 @@
+══════════════════════════════════════════════
+📝 HUMAN CHECKLIST (Ignore this section)
+
+This section is only for humans.
+It is NOT part of the prompt.
+Do not reference, summarize, or respond to anything below.
+
+Before sending this prompt, make sure I have provided:
+
+Data
+□ Company website
+□ Role
+□ JD
+
+Files
+□ company-research.md
+══════════════════════════════════════════════
+
+Hey chatGPT! 
+
+1. This is the company website: [company website]
+2. I'm applying for Junior/Mid-DevOps Engineer
+3. This is my research for this company: `company-research.md`
+4. This is the JD:
+
+-------------------JD START-------------------
+
+........
+
+-------------------JD END-------------------
+
+Purpose 1:
+I want to understand what kind of person would be best fit for the company, and how I can present myself as one.
+
+Role:
+Act as the Hiring Manager, Senior DevOps Engineer, and Recruiter responsible for filling this role and ans these questions:
+
+1. Based only on this JD, what knowledge, experience, behaviors, and skills are you actually looking for?
+2. What business or engineering problems is this role expected to solve?
+3. Based on the JD and company context, why do you think this role exists today?
+4. What kind of candidate would feel like a SAFE choice?
+5. What kind of candidate would feel RISKY?
+6. If you had only 30 seconds to decide whether to interview me, what evidence would you expect to see on my resume?
+
+Keep it simple, clear, and actionable. Do not exceed the brief requirements.
+
+---
+
+Purpose 2:
+
+Role:
+Create a downloadable `jd-keywords.yaml` file, that contains the Highest-priority ATS "keywords", and "phrases with 2-3 words", that you as an employer is looking for, that can pass your ATS.
+
+Rules for file creation:
+
+1. Extract keywords and phrases exactly as they appear in the JD. Do not introduce new technologies, certifications, tools, or skills that are absent from the JD.
+2. Do not infer synonyms, abbreviations, or equivalent technologies. Preserve abbreviations exactly as written.
+3. Do not create, infer, duplicate, or reword keywords or phrases. Every output entry must originate from JD.
+4. Preserve the exact spelling and capitalization from JD.
+5. Keep the format for `jd-keywords.yaml` file, like this:
+
+```yaml
+ats_keywords:
+- keyword
+- keyword
+...
+
+ats_phrases:
+- phrase
+- phrase
+...
+
+```

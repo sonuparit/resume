@@ -1,0 +1,48 @@
+══════════════════════════════════════════════
+📝 HUMAN CHECKLIST (Ignore this section)
+
+This section is only for humans.
+It is NOT part of the prompt.
+Do not reference, summarize, or respond to anything below.
+
+Before sending this prompt, make sure I have provided:
+
+Data
+□ Company name
+□ Company website
+□ Role
+
+Files
+□ company-research.md
+□ jd,txt
+□ jd-keywords.yaml
+□ corrected-resume.yaml
+□ cover-letter.md
+
+After receiving the response:
+□ Save it as application-review.md
+══════════════════════════════════════════════
+
+Hey chatGPT!
+
+Purpose:
+Want a personalized, company-specific cover letter that demonstrates a clear understanding of the company's business, engineering challenges, and how my experience can contribute to solving them.
+
+Data for reference:
+1. Company Name: [Company Name]
+2. Company Website: [Company website]
+3. Role, company looking for: [Role]
+4. JD: `jd.txt`
+5. Keywords from JD: `jd-keywords.yaml`
+5. Role I'm applying for: Junior/Mid-DevOps Engineer
+6. My research about company: `company-research.md`
+7. Resume: `corrected-resume.yaml`
+8. Cover letter: `cover-letter.md`
+
+Instructions:
+1. Does the resume clearly communicate the three most important qualifications from the JD?
+2. Are there any unsupported claims or weak statements in resume and cover letter?
+3. Does the cover letter reinforce the resume instead of repeating it?
+4. Which JD keywords are still missing from both resume and cover letter?
+5. What are the three biggest risks that might prevent this application from getting an interview?
+6. If you were the hiring manager, would you shortlist this candidate? Why or why not?

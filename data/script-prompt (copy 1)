@@ -1,0 +1,203 @@
+Hey chatGPT! 
+
+Purpose:
+I'm applying in this company as DevOps Engineer and how can I genuinely contribute in this company.
+
+Act as a journalist and help me find all about this company: [company website]
+
+Instructions:
+
+Please search the internet, forums, talks, redit posts, magazines news and possible source data and help me find out:
+1. What this company is all about (Past and present)?
+2. Where this company is heading?
+3. How this company works, what is their business model?
+4. What are the problems this company is facing?
+5. What are the problems, that I can solve as a DevOps engineer, if I join them.
+
+Keep it simple, clear, and actionable. Do not exceed the brief requirements.
+
+===================================================
+Result: I have the full context of the company
+===================================================
+
+---
+
+Hey chatGPT! 
+
+This is the company website: xyz.com
+
+This is the JD:
+
+-------------------JD START-------------------
+
+Job highlights:
+
+The ideal candidate will have experience in designing and implementing scalable architectures,collaborating with cross-functional teams,and troubleshooting complex issues.
+Experience with containerization using Docker and orchestration using Kubernetes
+
+Job description:
+
+We are looking for a highly skilled DevOps Engineer to join our team at Campus Direct, responsible for ensuring the smooth operation of our software systems. The ideal candidate will have experience in designing and implementing scalable architectures, collaborating with cross-functional teams, and troubleshooting complex issues.
+
+Roles and Responsibility:
+
+Design and implement scalable and secure infrastructure architectures.
+Collaborate with development teams to identify and prioritize project requirements.
+Develop and maintain automated testing frameworks to ensure high-quality code delivery.
+Troubleshoot and resolve complex technical issues efficiently.
+Implement continuous integration and continuous deployment (CI/CD) pipelines.
+Ensure compliance with industry standards and best practices.
+Job Requirements
+Strong understanding of cloud computing platforms such as AWS or Azure.
+Experience with containerization using Docker and orchestration using Kubernetes.
+Proficiency in scripting languages such as Python or Bash.
+Knowledge of agile methodologies and version control systems like Git.
+Excellent problem-solving skills and attention to detail.
+Ability to work collaboratively in a fast-paced environment.
+
+
+This job posting has been aggregated from external source. Role details, content, and availability are subject to change. Applicants are advised to confirm the latest information directly on the company website before applying.
+
+Role: DevOps Engineer
+Industry Type: Education / Training
+Department: Engineering - Software & QA
+Employment Type: Full Time, Permanent
+Role Category: DevOps
+
+Education:
+UG: Any Graduate
+PG: Any Postgraduate
+
+Key Skills:
+kubernetes, cd, continuous integration, python, orchestration, microsoft azure, ci/cd, docker, infrastructure architecture, containerization, scripting, git, devops, cloud computing platform, bash, agile, aws, scripting languages, architecture, agile methodology
+
+-------------------JD END-------------------
+
+Instructions:
+
+Act as the Hiring Manager, Senior DevOps Engineer, and Recruiter responsible for filling this role.
+1. Based only on this JD, what knowledge, experience, behaviors, and skills are you actually looking for?
+2. What is the real business problem behind this role?
+3. Why does this role likely exist now?
+4. What kind of candidate would feel like a SAFE choice?
+5. What kind of candidate would feel RISKY?
+6. Create a downloadable `jd-keywords.yaml` file that contains, the Highest-priority ATS "keywords", and "phrases with 2-3 words", that you are looking for, that can pass your ATS.
+7. Keep the format for `jd-keywords.yaml` file, like this:
+
+```yaml
+ats_keywords:
+- keyword
+- keyword
+...
+
+ats_phrases
+- phrase
+- phrase
+...
+
+```
+
+8. Do not create/invent keywords/phrases, use this JD only
+9. Keep it simple, clear, and actionable. Do not exceed the brief requirements.
+
+===================================================
+Result: I have reason behind job posting and all the important Key words
+===================================================
+
+---
+
+Hey chatgpt!
+
+Instructions:
+
+1. Use `jd-keywords.yaml` as actual ATS filter.
+2. Create a downloadable `missing-keywords.yaml` file, that contains all the keywords and phrases, that are not present in my `resume.yaml` in this format
+3. Keep the format for `missing-keywords.yaml` file, like this:
+
+```yaml
+must_have_keywords:
+- keyword
+- keyword
+...
+
+must_have_phrases:
+- phrase
+- phrase
+...
+
+```
+
+===================================================
+Result: I exactly know, which keyword/phrase is missing from my resume
+===================================================
+
+---
+
+Hey ChatGPT!
+
+Use `jd-keywords.yaml` as the authoritative ATS filter and perform a transformation on `resume.yaml`.
+
+Requirements:
+
+1. Preserve the entire file exactly: structure, ordering, indentation, arrays, IDs, punctuation, spacing, and all unchanged content.
+2. Output the complete transformed file as downloadable `resume-correction.yaml` file. Never truncate, summarize, omit sections, or use `...`.
+3. Modify only:
+
+  * `summary`
+  * `skills`
+  * `projects.bullets.text`
+  * `experience.bullets.text`
+  
+4. Never add, delete, rename, reorder, merge, split, abbreviate, paraphrase, or regenerate content. Copy unchanged lines verbatim from the source file.
+5. Preserve valid YAML syntax. Use `<s>...</s>` to mark non-relevant content.
+
+Transformation rules:
+
+1. **Sentence fields**
+
+   * Applies to `summary`, `projects.bullets.text`, and `experience.bullets.text`.
+   * Evaluate sentence-by-sentence.
+   * Wrap only non-relevant sentences with `<s>...</s>`.
+   * Leave relevant sentences unchanged.
+   * Never strike through an entire paragraph unless every sentence is non-relevant.
+
+2. **Skills**
+
+   * Applies to `skills`.
+   * Evaluate every skill token and skill phrase independently.
+   * Treat list items as containers, not as a single string.
+   * For nested values inside parentheses, brackets, or comma-separated groups, evaluate each sub-skill independently.
+   * Preserve separators and formatting exactly.
+   * Wrap only non-relevant tokens or phrases with `<s>...</s>`.
+   * Never strike through an entire list item if only some sub-skills are non-relevant.
+
+Perform a token-level transformation, not a rewrite.
+
+===================================================
+Result: I exactly know, What things I can change in my resume
+===================================================
+
+---
+
+Hey chatGPT!
+
+Purpose:
+To add keywords and phrases from `missing-keywords.yaml` file, into my resume, to increase ATS score.
+
+Transformation rules:
+
+1. Optimize each rewritten sentence or keyword or phrase to maximize ATS keyword relevance while preserving factual accuracy, readability, and natural language.
+2. Treat `my-skills.yaml` file, as my knowledge bank.
+3. All output must always, remain related to tools and skills inside `my-skills.yaml`.
+4. File `missing-keywords.yaml` contains all the keywords and phrases which I want to use, in generated output, to increase ATS score.
+5. Each keyword or phrase from `missing-keywords.yaml` should be used at most once unless necessary for natural language.
+6. Always follow this structure for generated output: Problem → Solution → Impact.
+7. Prefer quantified achievements using numbers, percentages, durations, counts, latency, throughput, cost savings, deployment frequency, or scale.
+8. Modify only: texts inside <s>...</s> tag in file `resume-correction.yaml`.
+9. If text has been modified inside <s> tags, then only, remove these <s> tags, never remove it's content.
+10. If skills or phrases inside `missing-keywords.yaml` file, does not align with `my-skills.yaml` file in any way, then leave the tags and it's contents as is.
+11. Use only the keywords that naturally fit the rewritten sentence. Do not force every keyword into every modification.
+12. Preserve the entire file exactly: structure, ordering, indentation, arrays, IDs, punctuation, spacing, and all unchanged content.
+13. Output the complete transformed file as downloadable `corrected-resume.yaml` file. Never truncate, summarize, omit sections, or use `...`.
+14. Never add, delete, rename, reorder, merge, split, abbreviate, paraphrase, or regenerate content outside <s> tags. Copy unchanged lines verbatim from the source file.
+15. Preserve valid YAML syntax.

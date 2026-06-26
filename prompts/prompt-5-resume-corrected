@@ -1,0 +1,38 @@
+══════════════════════════════════════════════
+📝 HUMAN CHECKLIST (Ignore this section)
+
+This section is only for humans.
+It is NOT part of the prompt.
+Do not reference, summarize, or respond to anything below.
+
+Before sending this prompt, make sure I have provided:
+
+Files
+□ missing-keywords.yaml
+□ my-skills.yaml
+□ resume-correction.yaml
+══════════════════════════════════════════════
+
+Hey chatGPT!
+
+Purpose:
+To add keywords and phrases from `missing-keywords.yaml` file, into my resume, to increase ATS score.
+
+Transformation rules:
+
+1. Optimize each rewritten sentence or keyword or phrase to maximize ATS keyword relevance while preserving factual accuracy, readability, and natural language.
+2. Treat `my-skills.yaml` file, as my knowledge bank.
+3. All output must always, remain related to tools and skills inside `my-skills.yaml`.
+4. File `missing-keywords.yaml` contains all the keywords and phrases which I want to use, in generated output, to increase ATS score.
+5. Each keyword or phrase from `missing-keywords.yaml` should be used at most once unless necessary for natural language.
+6. Always follow this structure for generated output: Problem → Solution → Impact.
+7. Prefer quantified achievements using numbers, percentages, durations, counts, latency, throughput, cost savings, deployment frequency, or scale.
+8. Modify only: texts inside <s>...</s> tag in file `resume-correction.yaml`.
+9. If text has been modified inside <s> tags, then only, remove these <s> tags, never remove it's content.
+10. If skills or phrases inside `missing-keywords.yaml` file, does not align with `my-skills.yaml` file in any way, then leave the tags and it's contents as is.
+11. Use only the keywords that naturally fit the rewritten sentence. Do not force every keyword into every modification.
+12. Preserve the entire file exactly: structure, ordering, indentation, arrays, IDs, punctuation, spacing, and all unchanged content.
+13. Output the complete transformed file as downloadable `corrected-resume.yaml` file. Never truncate, summarize, omit sections, or use `...`.
+14. Never add, delete, rename, reorder, merge, split, abbreviate, paraphrase, or regenerate content outside <s> tags. Copy unchanged lines verbatim from the source file.
+15. Never fabricate experience, responsibilities, technologies, projects, certifications, employers, metrics, or achievements.
+16. Preserve valid YAML syntax.

@@ -51,15 +51,14 @@
     </div>
 
     <h2>PROFILE SUMMARY</h2>
-    <p>DevOps Engineer with a background in military aviation and an automation-first mindset. Skilled in Kubernetes, Terraform, AWS, Linux, and CI/CD pipelines. Built production-grade, cloud-native platforms with GitOps workflows, secrets management, persistent storage, and full observability stacks. Track record of eliminating bottlenecks, reducing downtime, automating repetitive tasks, and designing reliable infrastructure solutions.
-</p>
+    <p>DevOps Engineer with a background in military aviation and an automation-first mindset. Skilled in Kubernetes, Terraform, AWS, Linux, and CI/CD pipelines. Built production-grade, cloud-native platforms with GitOps workflows, secrets management, persistent storage, and full observability stacks. <s>Track record of eliminating bottlenecks, reducing downtime, automating repetitive tasks, and designing reliable infrastructure solutions.</s></p>
 
     <h2>TECHNICAL SKILLS</h2>
     <ul class="skills">
-      <li><strong>DevOps & Cloud:</strong> Docker, Docker Compose, Kubernetes, Helm, ArgoCD, YAML, GitHub Actions, CI/CD, Jenkins, GitOps, SQL, AWS (EKS, EC2, IAM, VPC, S3, ECR, AWS Secrets Manager, Lambda, Cloud Watch)</li>
-      <li><strong>Configuration Management & IaC:</strong> Terraform, Ansible, Infrastructure as Code</li>
-      <li><strong>Observability & Monitoring:</strong> Prometheus, Grafana, Loki, Alertmanager, Exporters</li>
-      <li><strong>Systems Engineering:</strong> Python, Bash, JavaScript, Linux Administration (Xubuntu daily driver), Networking, Troubleshooting, Root Cause Analysis (RCA), Incident Response, Production Support</li>
+      <li><strong>DevOps & Cloud:</strong> Docker, Docker Compose, Kubernetes, <s>Helm</s>, <s>ArgoCD</s>, <s>YAML</s>, GitHub Actions, CI/CD, <s>Jenkins</s>, GitOps, <s>SQL</s>, AWS (<s>EKS</s>,<s> EC2</s>,<s> IAM</s>,<s> VPC</s>,<s> S3</s>,<s> ECR</s>, AWS Secrets Manager,<s> Lambda</s>,<s> Cloud Watch</s>)</li>
+      <li><strong>Configuration Management & IaC:</strong> <s>Terraform</s>, <s>Ansible</s>, <s>Infrastructure as Code</s></li>
+      <li><strong>Observability & Monitoring:</strong> <s>Prometheus</s>, <s>Grafana</s>, <s>Loki</s>, <s>Alertmanager</s>, <s>Exporters</s></li>
+      <li><strong>Systems Engineering:</strong> Python, Bash, <s>JavaScript</s>, <s>Linux Administration </s>(<s>Xubuntu daily driver</s>), <s>Networking</s>, Troubleshooting, <s>Root Cause Analysis </s>(<s>RCA</s>), <s>Incident Response</s>, <s>Production Support</s></li>
     </ul>
 
     <h2>PROJECTS</h2>
@@ -74,8 +73,8 @@
         <li>Removed configuration drift across development, staging, and production environments by designing reusable Helm charts with Lua-based health checks, enabling layered, dependency-aware GitOps deployments from a single source of truth through ArgoCD.</li>
         <li>Engineered Kubernetes PersistentVolume architecture for PostgreSQL and integrated DynamoDB as a managed data layer, ensuring 0 data loss during cluster recreation.</li>
         <li>Externalized 100% of hardcoded credentials by integrating External Secrets Operator with AWS Secrets Manager and IMDSv2-based IAM authentication.</li>
-        <li>Reduced container image size by 17% by switching to Amazon Linux 2023 minimal (AL2023-minimal) base images, while maintaining full glibc and dnf compatibility.</li>
-        <li>Established a complete monitoring and observability stack with Prometheus, Grafana, Loki, and Alertmanager, across 3 environments, enabling early infra/application issues via Slack and email alerts.</li>
+        <li><s>Reduced container image size by 17% by switching to Amazon Linux 2023 minimal (AL2023-minimal) base images, while maintaining full glibc and dnf compatibility.</s></li>
+        <li><s>Established a complete monitoring and observability stack with Prometheus, Grafana, Loki, and Alertmanager, across 3 environments, enabling early infra/application issues via Slack and email alerts.</s></li>
       </ul>
       <div class="desig-div highlight">
         <div>Reverse-engineered Terraform and built GitOps-Driven CI/CD pipeline
@@ -85,7 +84,7 @@
       </div>
       <ul>
         <li>Decomposed a single-pass Terraform deployment into 4 dependency-aware provisioning stages, reducing provisioning complexity and troubleshooting scope by ~75%, and enabling consistent infra deployment.</li>
-        <li>Eliminated manual container build and release processes by implementing an automated CI workflow (trigger → build → tag → publish), removing human error and accelerating deployment by ~20%.</li>
+        <li><s>Eliminated manual container build and release processes by implementing an automated CI workflow (trigger → build → tag → publish), removing human error and accelerating deployment by ~20%.</s></li>
         <li>Implemented GitOps-driven deployment workflows using ArgoCD ApplicationSet with a dedicated `gitops` branch as the single deployment trigger, isolating all 3 environments (dev/stage/prod) via folder-based Helm values files, ensuring main branch changes never unintentionally trigger deployments.</li>
       </ul>
       <div class="desig-div highlight">
@@ -96,7 +95,7 @@
       </div>
       <ul>
         <li>Mitigated disk exhaustion risks by ~50% by building a production-grade log lifecycle framework, automating cleanup across Docker, Kubernetes, and System log paths and enabling safe unattended execution through validation, script locking, dry-run support, and idempotent scheduling.</li>
-        <li>Introduced disk and inode monitoring with Slack and email alerting, including low-yield cleanup warnings below 100MB threshold, enabling early detection of capacity issues before they impact platform stability.</li>
+        <li><s>Introduced disk and inode monitoring with Slack and email alerting, including low-yield cleanup warnings below 100MB threshold, enabling early detection of capacity issues before they impact platform stability.</s></li>
       </ul>
     </div>
 
@@ -111,7 +110,7 @@
       <ul>
         <li>Deployed a production-grade, 5-microservice based application on Terraform-provisioned AWS EKS.</li>
         <li>Automated an end-to-end CI/CD pipeline using ArgoCD for GitOps-based continuous delivery, completing full deployments in under 8 minutes per release.</li>
-        <li>Built a complete observability stack, Prometheus and Grafana for metrics, Loki for centralized logging, and Alertmanager for alert routing, providing real-time visibility across 3 environments (dev, stage, prod).</li>
+        <li><s>Built a complete observability stack, Prometheus and Grafana for metrics, Loki for centralized logging, and Alertmanager for alert routing, providing real-time visibility across 3 environments (dev, stage, prod).</s></li>
       </ul>
       <div class="desig-div highlight">
         <div>Algo Trading | Self Employed
@@ -120,8 +119,8 @@
         <div>Aug 2022 - Jul 2025</div>
       </div>
       <ul>
-        <li>Developed an MT5 script for real-time, multi-object synchronization across multiple open charts of the same forex pair on any timeframe, improving multi-chart analysis efficiency by 75%.</li>
-        <li>Automated market analysis workflows by creating 10+ custom MT5 indicators and scripts according to needs, reducing human error by ~80% and improving decision-making consistency.</li>
+        <li><s>Developed an MT5 script for real-time, multi-object synchronization across multiple open charts of the same forex pair on any timeframe, improving multi-chart analysis efficiency by 75%.</s></li>
+        <li><s>Automated market analysis workflows by creating 10+ custom MT5 indicators and scripts according to needs, reducing human error by ~80% and improving decision-making consistency.</s></li>
       </ul>
       <div class="desig-div highlight">
         <div>Indian Army | Aviation Technician
@@ -130,9 +129,9 @@
         <div>Jun 2014 - Jul 2022</div>
       </div>
       <ul>
-        <li>Responsible for preventive and corrective maintenance of military aircraft, daily inspection checks, log card management, component servicing and replacement, and FDR data retrieval and analysis.</li>
-        <li>On own initiative, identified critical maintenance tracking gaps and designed a VBA-based lifecycle alerting system, generating real-time component expiry lists across all aircraft, reducing manual monitoring time by ~80%, and cutting the risk of missed maintenance events by ~98%. Proved mission-critical during the Pulwama attack, saving 10+ hours of daily manual checking and earning a commendation from the OC.</li>
-        <li>On own initiative, diagnosed and restored 10 Display Mission Computers (DMCs) deemed unrecoverable by the unit, increasing aircraft availability by 50% and recovering assets valued at over ~$1.8M USD.</li>
+        <li><s>Responsible for preventive and corrective maintenance of military aircraft, daily inspection checks, log card management, component servicing and replacement, and FDR data retrieval and analysis.</s></li>
+        <li><s>On own initiative, identified critical maintenance tracking gaps and designed a VBA-based lifecycle alerting system, generating real-time component expiry lists across all aircraft, reducing manual monitoring time by ~80%, and cutting the risk of missed maintenance events by ~98%.</s> <s>Proved mission-critical during the Pulwama attack, saving 10+ hours of daily manual checking and earning a commendation from the OC.</s></li>
+        <li><s>On own initiative, diagnosed and restored 10 Display Mission Computers (DMCs) deemed unrecoverable by the unit, increasing aircraft availability by 50% and recovering assets valued at over ~$1.8M USD.</s></li>
       </ul>
     </div>
 

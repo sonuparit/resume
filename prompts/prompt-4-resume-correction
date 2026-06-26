@@ -1,0 +1,61 @@
+══════════════════════════════════════════════
+📝 HUMAN CHECKLIST (Ignore this section)
+
+This section is only for humans.
+It is NOT part of the prompt.
+Do not reference, summarize, or respond to anything below.
+
+Before sending this prompt, make sure I have provided:
+
+Files
+□ jd-keywords.yaml
+□ resume.yaml
+══════════════════════════════════════════════
+
+Hey ChatGPT!
+
+Purpose:
+I want to know exactly which contents are taking unnecessary space, and where are they located in my resume, So I can better use those places to optimize my resume according to JD, to pass ATS.
+
+Consider content non-relevant if it is unrelated, redundant, overly generic, or does not strengthen the candidate's fit for the target role according to `jd-keywords.yaml`
+
+Instructions:
+
+Use `jd-keywords.yaml` as the authoritative ATS filter and perform a transformation on `resume.yaml`.
+
+Requirements:
+
+1. Preserve the entire file exactly: structure, ordering, indentation, arrays, IDs, punctuation, spacing, and all unchanged content.
+2. Output the complete transformed file as downloadable `resume-correction.yaml` file. Never truncate, summarize, omit sections, or use `...`.
+3. Modify only:
+
+  * `summary`
+  * `skills`
+  * `projects.bullets.text`
+  * `experience.bullets.text`
+  
+4. Never add, delete, rename, reorder, merge, split, abbreviate, paraphrase, or regenerate content. Copy unchanged lines verbatim from the source file.
+5. Never fabricate experience, responsibilities, technologies, projects, certifications, employers, metrics, or achievements.
+6. Preserve valid YAML syntax. Use `<s>...</s>` to mark non-relevant content.
+
+Transformation rules:
+
+1. **Sentence fields**
+
+   * Applies to `summary`, `projects.bullets.text`, and `experience.bullets.text`.
+   * Evaluate sentence-by-sentence.
+   * Wrap only non-relevant sentences with `<s>...</s>`.
+   * Leave relevant sentences unchanged.
+   * Never strike through an entire paragraph unless every sentence is non-relevant.
+
+2. **Skills**
+
+   * Applies to `skills`.
+   * Evaluate every skill token and skill phrase independently.
+   * Treat list items as containers, not as a single string.
+   * For nested values inside parentheses, brackets, or comma-separated groups, evaluate each sub-skill independently.
+   * Preserve separators and formatting exactly.
+   * Wrap only non-relevant tokens or phrases with `<s>...</s>`.
+   * Never strike through an entire list item if only some sub-skills are non-relevant.
+
+Perform a token-level transformation, not a rewrite.
