@@ -1,3 +1,5 @@
+--------------INSTRUCTIONS-------------
+
 ══════════════════════════════════════════════
 📝 HUMAN CHECKLIST (Ignore this section)
 
@@ -12,7 +14,7 @@ Files
 □ resume.yaml
 ══════════════════════════════════════════════
 
-Hey chatgpt!
+--------------PROMPT--------------
 
 Purpose:
 I want to know exactly which keywords or phrases are absent in my resume, so that, I can put them in my resume, to increase my chances to pass the ATS filter.

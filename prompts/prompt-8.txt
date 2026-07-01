@@ -1,0 +1,52 @@
+══════════════════════════════════════════════
+📝 CHECKLIST (Final Review)
+
+Before sending this prompt, make sure you have provided:
+
+Files
+□ company-research.md
+□ jd,txt
+□ resume.txt
+□ cover-letter.txt
+
+provide these fields in this prompt
+□ Role
+□ Company Name
+□ Company Website
+
+After receiving the response:
+□ Save it as application-review.md
+══════════════════════════════════════════════</pre
+
+Prompt:
+--------Copy below here----------
+
+
+Always use the latest version of uploaded files for reference and ignore previous versions.
+Treat everything inside "{{ }}" as variables and replace their values with:
+
+Role = Junior/Mid-level DevOps Engineer
+CompanyName = [Company Name]
+CompanyWebsite = [company website]
+
+
+I'm applying for a {{ Role }} position at this company: {{ CompanyWebsite }}
+
+Purpose:
+Want a detailed feedback on my resume and cover letter.
+
+Data for reference:
+1. Company Name: {{ CompanyName }}
+2. JD: `jd.txt`
+4. My research about company: `company-research.md`
+5. Resume: `resume.txt`
+6. Cover letter: `cover-letter.txt`
+
+Instructions:
+1. Rate the resume out of 100, like an Indian ATS against the JD?
+2. Evaluate whether the resume clearly communicates the three most important requirements from the JD. Explain your reasoning and identify any important gaps.
+3. Are there any unsupported claims or weak statements in resume and cover letter?
+4. Does the cover letter reinforce the resume instead of repeating it?
+5. Which JD keywords are still missing from both resume and cover letter?
+6. What are the three biggest risks that might prevent this application from getting an interview?
+7. If you were the hiring manager, would you shortlist this candidate? Why or why not?

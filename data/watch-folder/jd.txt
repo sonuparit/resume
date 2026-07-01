@@ -1,0 +1,93 @@
+Job highlights
+0.5-3 years experience as Junior DevOps Engineer with AWS, Kubernetes, Docker, CI/CD pipeline skills
+Build, deploy, and maintain cloud infrastructure; manage AWS services; monitor systems; support CI/CD pipelines; troubleshoot infrastructure and networking; manage Kubernetes clusters; automate tasks; participate in incident response
+4-6 LPA salary offered
+Job match score
+Early Applicant
+Keyskills
+Location
+Work Experience
+Job description
+
+( CS Batch 2025/2026 are preferred)
+
+Trivandrum
+
+Junior Devops Engineer with 0.5 - 3 years of experience
+
+Trivandrum
+
+Work From Office
+
+4-6 LPA
+
+
+We are looking for a motivated and proactive Junior DevOps Engineer to support and enhance our cloud-native infrastructure and DevOps practices. This role involves working with modern cloud platforms, containerized environments, CI/CD pipelines, and monitoring systems to ensure high availability, scalability, and reliability of applications.
+
+The ideal candidate should be hands-on, eager to learn, collaborative, and passionate about automation, cloud technologies, and system reliability.
+
+Key Responsibilities
+
+Assist in building, deploying, and maintaining cloud infrastructure and containerized applications.
+Work with AWS services (Fargate, ECS, DynamoDB, SNS, etc.) for managing distributed systems.
+Monitor system performance using CloudWatch, Prometheus, Grafana, Loki, and Splunk, and respond to alerts.
+Support CI/CD pipelines using tools like Jenkins, GitHub Actions, and ArgoCD.
+Troubleshoot issues across infrastructure, networking, containers, and applications.
+Assist in configuring and managing Kubernetes clusters, including deployments, services, and ingress.
+Work on networking components such as load balancers, API gateways, reverse proxies, and service communication.
+Participate in incident response, root cause analysis (RCA), and postmortems.
+Automate repetitive tasks using scripts and tools to improve efficiency.
+Maintain documentation for infrastructure, deployments, and troubleshooting processes.
+Collaborate with development and operations teams to improve system reliability and deployment workflows.
+Participate in on-call or shift rotations to ensure system availability.
+Technical Skills
+
+Cloud Platforms and Services
+
+Basic to intermediate knowledge of AWS services such as ECS, Fargate, DynamoDB, SNS.
+Basic to intermediate knowledge of GCP services such as GKE, GAR, CloudSQL, Cloud Run.
+Understanding of cloud-native architectures and distributed systems.
+Familiarity with infrastructure provisioning concepts (Terraform/CloudFormation is a plus).
+Monitoring and Logging Tools
+
+Knowledge of CloudWatch Logs, Loki, Splunk for log analysis.
+Familiarity with Prometheus and Grafana for metrics monitoring and dashboarding.
+Understanding of alerting systems (Alertmanager) and incident response workflows.
+Ability to analyze logs and metrics to identify system issues.
+Networking and Security
+
+Strong understanding of load balancers (e.g., ALB, NLB) for distributing traffic and troubleshooting connectivity issues.
+Knowledge in API Gateways like AWS API Gateway or NGINX for managing API traffic.
+Knowledge of reverse proxies and ingress controllers (e.g., NGINX Ingress, Traefik) for managing internal/external traffic.
+Understanding service-to-service communications, including DNS, HTTP/HTTPS, and gRPC protocols.
+Experience or hands-on knowledge with firewalls, security groups, and IAM roles for secure communications.
+Troubleshooting skills for VM-related issues in platforms like AWS EC2 or equivalent.
+DevOps Toolchains
+
+Proficiency with Docker for managing container images and runtime debugging.
+Strong understanding of Kubernetes concepts of managing deployments, ingress setups, and pod-related issues and related troubleshooting commands and mechanisms.
+Knowledge of CI/CD pipeline building tools such as Jenkins, GitHub Actions, ArgoCD for building, deploying, and managing automated pipelines.
+Understanding of Ingress controllers (e.g., NGINX, Traefik) and SSL termination for secure routing.
+Troubleshooting and Incident Management
+
+Strong problem-solving skills to identify root causes using logs, metrics, and system-level debugging.
+Ability to document detailed troubleshooting steps and solutions for recurring issues.
+Collaboration and Communication
+
+Ability working with cross-functional teams (DevOps, development, and operations) to resolve incidents.
+Skills in effective and proactive communication to escalate issues and provide updates during shift handovers.
+Proficiency with tools like Slack, JIRA, Confluence, or Google Workspace for collaboration and issue tracking.
+
+
+Role: DevOps Engineer
+Industry Type: IT Services & Consulting
+Department: Engineering - Software & QA
+Employment Type: Full Time, Permanent
+Role Category: DevOps
+Education
+UG: B.C.A. in Computer Applications (General), Cloud Computing, Cybersecurity, B.Tech / B.E. in Computer Science and Engineering (CSE), Computer Science and Business System, Information Technology, Cyber Security
+PG: M.Tech in Computers, MCA in Computers, Artificial Intelligence and Machine Learning, MS/M.Sc(Science) in Computers, Cyber Security Engineering
+Key Skills
+Skills highlighted with ‘‘ are preferred keyskills
+Ci Cd PipelineAws Devops
+DockerKubernetes

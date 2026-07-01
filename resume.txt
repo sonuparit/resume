@@ -1,0 +1,56 @@
+Sonu Parit | DevOps engineer
+
+---
+
+PROFESSIONAL_SUMMARY:
+
+DevOps Engineer with a background in military aviation and an automation-first mindset. Skilled in Kubernetes, Terraform, AWS, Linux, and CI/CD pipelines. Built production-grade, cloud-native platforms with GitOps workflows, secrets management, persistent storage, and full observability stacks. Track record of automating infrastructure, eliminating bottlenecks, reducing root cause analysis time by ~20%, and achieving deployments in under 8 minutes.
+
+---
+
+TECHNICAL SKILLS:
+
+Technologies:
+Docker, Helm, Kubernetes, GitHub Actions, ArgoCD, MySQL, AWS, EKS, EC2, IAM, VPC, S3, ECR, EBS, Secrets Manager, Lambda, Terraform, Ansible, Prometheus, Grafana, Loki, Python, Bash, JavaScript
+
+Engineering Capabilities:
+GitOps, Containerization, Kubernetes Administration, CI/CD Pipeline Development, Secret Management, Monitoring and Observability, Log Management, Infrastructure as Code (IaC), Configuration Management, Infrastructure Automation, Linux Administration, Scripting, Troubleshooting, RCA, Networking.
+
+---
+
+PROJECTS:
+
+Project 1 heading:
+Productionizing a Microservices Application (Reverse-Engineered)                    Mar 2026 - Present
+
+Bullets:
+1. Engineered multi-environment Helm charts, layer-based deployment, Lua-based health checks, least-privilege IAM roles and health exporters, building end-to-end platform ownership. Implemented PersistentVolume architecture for PostgreSQL and integrated AWS DynamoDB, ensuring 0 data loss during cluster recreation.
+2. Reduced attack surface by externalizing all credentials via External Secrets Operator, AWS Secrets Manager and IMDSv2 and lowered image size by 17%(AL2023-minimal) while maintaining full glibc and dnf compatibility.
+3. Established monitoring, observability, and logging with Prometheus, Grafana, and Loki, enabling early alerting and reducing root cause analysis time by ~20%.
+
+Project 2 heading:
+Reverse-engineered Terraform and built GitOps-Driven CI/CD pipeline                 Feb 2026 - Mar 2026
+
+Bullets:
+1. Decomposed a single-pass Terraform deployment into 4 provisioning stages (VPC → EKS → Addons → ArgoCD), reducing provisioning complexity and troubleshooting scope by ~75%.
+2. Eliminated manual container build and release processes by implementing an automated CI workflow (trigger → build → tag → publish), removing human error and accelerating deployment by ~20%.
+3. Architected branch-based CI and app-of-apps-based CD, reducing unwanted CI triggers by ~50%.
+
+Project 3 heading:
+Production-Grade Log Management and Cleanup Automation                              Jan 2026 - Feb 2026
+
+Bullets:
+1. Built production-grade log lifecycle framework from scratch, mitigating disk exhaustion risks by ~50%.
+2. Implemented custom path cleanup including Docker and Kubernetes, safe unattended execution through script locking, validation, dry-run, and scheduling, reducing human intervention by 50%.
+3. Configured active alerts for disk, inode and low-yield cleanup (less than 100MB) with Slack/email.
+
+
+EXPERIENCE:
+
+Experience 1 heading:
+DevOps Engineer | Self-Directed Engineering Practice                                Aug 2025 - Present
+
+Bullets:
+1. Delivered 3 production-grade projects across AWS EKS, Kubernetes (KIND), and Linux — owning end-to-end pipeline development, architectural decisions, infrastructure design.
+2. Productionized a 5-microservice based application deployment across multi-environment on Kubernetes with full monitoring and observability stack providing proactive alerts, increasing failure visibility by ~20%.
+3. Deployed a polyglot application on Terraform-provisioned AWS EKS, ensuring idempotent infrastructure with automated CI/CD using ArgoCD and GitHub Actions, completing application deployment in under 8 minutes.

@@ -1,0 +1,62 @@
+TechnicalSkills:
+- technologies:
+  - Docker
+  - Docker Compose
+  - Helm
+  - Helmfile
+  - Kubernetes
+  - YAML
+  - Git
+  - GitHub
+  - GitHub Actions
+  - Jenkins
+  - ArgoCD
+  - SQL
+  - MySQL
+  - PostgreSQL
+  - DynamoDB
+  - AWS
+  - EKS
+  - EC2
+  - IAM
+  - VPC
+  - S3
+  - ECR
+  - EBS
+  - Secrets Manager
+  - Lambda
+  - Terraform
+  - Ansible
+  - Prometheus
+  - Grafana
+  - Loki
+  - Python
+  - Bash
+  - JavaScript
+  
+- engineering_capabilities:
+  - Cloud Infrastructure
+  - Infrastructure as Code (IaC)
+  - Infrastructure Automation
+  - Configuration Management
+  - Containerization
+  - Kubernetes Administration
+  - GitOps
+  - CI/CD Pipeline Development
+  - Deployment Automation
+  - Secrets Management
+  - Identity & Access Management (IAM)
+  - Monitoring and Observability
+  - Log Management
+  - Incident Response
+  - Root Cause Analysis (RCA)
+  - Production Support
+  - Performance Optimization
+  - System Troubleshooting
+  - Linux Administration
+  - Networking
+  - Automation
+  - Scripting
+  - Multi-Environment Deployments
+  - Platform Engineering
+  - Cloud Security

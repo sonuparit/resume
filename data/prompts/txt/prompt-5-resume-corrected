@@ -1,3 +1,5 @@
+--------------INSTRUCTIONS-------------
+
 ══════════════════════════════════════════════
 📝 HUMAN CHECKLIST (Ignore this section)
 
@@ -13,7 +15,7 @@ Files
 □ resume-correction.yaml
 ══════════════════════════════════════════════
 
-Hey chatGPT!
+--------------PROMPT--------------
 
 Purpose:
 To add keywords and phrases from `missing-keywords.yaml` file, into my resume, to increase ATS score.

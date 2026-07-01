@@ -1,0 +1,48 @@
+══════════════════════════════════════════════
+📝 CHECKLIST (Do not copy this section)
+
+Note: These prompts are for Engineering Jobs, modify them as it fits you.
+
+Before sending this prompt, make sure you have provided:
+
+Files
+□ jd.txt
+
+fields in this prompt
+□ Role
+□ Company Website
+□ Recruiter Position
+
+After receiving the response:
+□ Save it as interview-preparation.md
+══════════════════════════════════════════════
+
+Prompt:
+--------Copy below here----------
+
+
+Always use the latest version of uploaded files for reference and ignore previous versions.
+Treat everything inside "{{ }}" as variables and replace their values with:
+
+Role = Junior/Mid-level DevOps Engineer
+CompanyWebsite = [company website]
+RecruiterPosition = Senior DevOps Engineer
+
+1. I'm applying for a {{ Role }} position at this company: {{ CompanyWebsite }}
+2. This is my research for this company: `company-research.md`
+3. This is JD: `jd.txt`
+
+Purpose:
+Your objective is to help me understand what kind of person would be best fit for the company, and how I can present myself as one.
+
+Role:
+Act as the Hiring Manager, {{ RecruiterPosition }}, and Recruiter responsible for filling this role and ans these questions:
+
+1. Based only on this JD, what knowledge, experience, behaviors, and skills are you actually looking for?
+2. What business or engineering problems is this role expected to solve?
+3. Based on the JD and company context, why do you think this role exists today?
+4. What kind of candidate would feel like a SAFE choice?
+5. What kind of candidate would feel RISKY?
+6. If you had only 30 seconds to decide whether to interview me, what evidence would you expect to see on my resume?
+
+Keep it simple, clear, and actionable. Do not exceed the brief requirements.

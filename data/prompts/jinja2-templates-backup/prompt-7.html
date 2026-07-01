@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Prompt Viewer</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        margin: 40px;
+      }
+      .card {
+        background: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 24px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 12px;
+      }
+      pre {
+        white-space: pre-wrap;
+        word-break: break-word;
+        background: #fafafa;
+        padding: 16px;
+        border-radius: 8px;
+      }
+      .copy {
+        border: none;
+        background: #2563eb;
+        color: #fff;
+        padding: 8px 12px;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+      .copy:hover {
+        background: #1d4ed8;
+      }
+    </style>
+    <script>
+      async function copyPrompt(id, btn) {
+        await navigator.clipboard.writeText(
+          document.getElementById(id).innerText,
+        );
+        const old = btn.innerText;
+        btn.innerText = "✓";
+        setTimeout(() => (btn.innerText = old), 1200);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Prompt Document</h1>
+    <section class="card">
+      <div class="header"><h2>Instructions</h2></div>
+      <pre>
+══════════════════════════════════════════════
+📝 CHECKLIST
+
+Before sending this prompt, make sure I have provided:
+
+Files
+□ company-research.md
+□ jd,txt
+□ jd-keywords.yaml
+□ corrected-resume.yaml
+□ cover-letter.md
+
+After receiving the response:
+□ Save it as application-review.md
+══════════════════════════════════════════════</pre
+      >
+    </section>
+    <section class="card">
+      <div class="header">
+        <h2>Prompt</h2>
+        <button class="copy" onclick="copyPrompt('p0', this)">📋</button>
+      </div>
+      <pre id="p0">
+Purpose:
+Want a personalized, company-specific cover letter that demonstrates a clear understanding of the company&#x27;s business, engineering challenges, and how my experience can contribute to solving them.
+
+Data for reference:
+1. Company Name: [Company Name]
+2. Company Website: [Company website]
+3. Role, company looking for: [Role]
+4. JD: `jd.txt`
+5. Keywords from JD: `jd-keywords.yaml`
+5. Role I&#x27;m applying for: Junior/Mid-DevOps Engineer
+6. My research about company: `company-research.md`
+7. Resume: `corrected-resume.yaml`
+8. Cover letter: `cover-letter.md`
+
+Instructions:
+1. Does the resume clearly communicate the three most important qualifications from the JD?
+2. Are there any unsupported claims or weak statements in resume and cover letter?
+3. Does the cover letter reinforce the resume instead of repeating it?
+4. Which JD keywords are still missing from both resume and cover letter?
+5. What are the three biggest risks that might prevent this application from getting an interview?
+6. If you were the hiring manager, would you shortlist this candidate? Why or why not?</pre
+      >
+    </section>
+  </body>
+</html>

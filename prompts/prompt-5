@@ -1,0 +1,49 @@
+══════════════════════════════════════════════
+📝 CHECKLIST (Do not copy this section)
+
+Note: These prompts are for Engineering Jobs, modify them as it fits you.
+
+Before sending this prompt, make sure you have provided:
+
+Files
+□ jd-keywords.yaml
+□ my-skills.yaml
+══════════════════════════════════════════════
+
+Prompt:
+--------Copy below here----------
+
+
+
+TECHNICAL SKILLS:
+
+Technologies:
+Docker, Helm, Kubernetes, GitHub Actions, ArgoCD, MySQL, AWS, EKS, EC2, IAM, VPC, S3, ECR, EBS, Secrets Manager, Lambda, Terraform, Ansible, Prometheus, Grafana, Loki, Python, Bash, JavaScript
+
+Engineering Capabilities:
+GitOps, Containerization, Kubernetes Administration, CI/CD Pipeline Development, Secret Management, Monitoring and Observability, Log Management, Infrastructure as Code (IaC), Configuration Management, Infrastructure Automation, Linux Administration, Scripting, Troubleshooting, RCA, Networking.
+
+---
+
+Purpose:
+I'm applying for a junior DevOps Engineer role. Tailor my "TECHNICAL SKILLS" section to maximize ATS alignment for the target JD: `jd-keywords.yaml`.
+
+Instructions 1:
+1. Always use the latest version of uploaded files for reference and ignore previous versions.
+2. Modify only "TECHNICAL SKILLS", and output it in embedded form.
+3. Do, not exceed 300 characters.
+4. Always prioritize "required" over "preferred" when both are available.
+5. Include only "Technologies" and "Engineering Capabilities" that are explicitly present in BOTH `my-skills.yaml` and `jd-keywords.yaml` otherwise remove it.
+6. Preserve the exact capitalization, abbreviations, and terminology used in the `jd-keywords.yaml` verbatim.
+7. Do not infer equivalent technologies or Engineering Capabilities, eg:
+
+```eg-txt
+Infrastructure as Code ≠ IaC unless explicitly written in the JD.
+CI/CD ≠ Continuous Integration and Continuous Delivery unless explicitly written in the `jd-keywords.yaml`.
+```
+
+---
+
+Instruction 2:
+1. Generate an updated copy of `jd-keywords.yaml`.
+2. list all the "Technologies" and "Engineering Capabilities" from `jd-keywords.yaml` that are not used in my newly generated "Technologies" and "Engineering Capabilities".

@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Prompt Viewer</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        margin: 40px;
+      }
+      .card {
+        background: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 24px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 12px;
+      }
+      pre {
+        white-space: pre-wrap;
+        word-break: break-word;
+        background: #fafafa;
+        padding: 16px;
+        border-radius: 8px;
+      }
+      .copy {
+        border: none;
+        background: #2563eb;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+      .copy:hover {
+        background: #1d4ed8;
+      }
+    </style>
+
+    <script>
+      async function copyPrompt(id, btn) {
+        await navigator.clipboard.writeText(
+          document.getElementById(id).innerText,
+        );
+        const old = btn.innerText;
+        btn.innerText = "✓";
+        setTimeout(() => (btn.innerText = old), 1200);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Prompt Document</h1>
+
+    <section class="card">
+      <div class="header">
+        <h2>Instructions</h2>
+      </div>
+      <pre>
+══════════════════════════════════════════════
+📝 CHECKLIST
+
+Before sending this prompt, make sure you have provided:
+
+Files
+□ jd-keywords.yaml
+□ resume.yaml
+□ my-skills.yaml
+══════════════════════════════════════════════</pre
+      >
+    </section>
+
+    <section class="card">
+      <div class="header">
+        <h2>Prompt</h2>
+        <button class="copy" onclick="copyPrompt('prompt_0', this)">📋</button>
+      </div>
+      <pre id="prompt_0">
+I&#x27;m applying for a {{ Role }} position at this company: {{ CompanyWebsite }}      
+
+`jd-keywords.yaml` contains all the important keywords, phrases and responsibilities, this company is looking for.
+
+Purpose:
+I want to know exactly which contents are taking unnecessary space, and where are they located in my resume, So I can better use those places to optimize my resume according to JD, to pass ATS.
+
+Consider content non-relevant if it is unrelated, redundant, overly generic, or does not strengthen the candidate&#x27;s fit for the target role according to `jd-keywords.yaml`
+
+Instructions:
+
+Use `jd-keywords.yaml` as the authoritative ATS filter and perform a transformation on `resume.yaml`.
+
+Output the complete transformed file as downloadable `resume-correction.yaml` file. Never truncate, summarize, omit sections, or use `...`.
+
+Rules for transformation:
+
+1. Modify only:
+
+  * `summary`
+  * `skills`
+  * `projects.bullets.text`
+  * `experience.bullets.text[0-2]`
+  
+2. Wrap the transformed contents inside `&lt;s&gt;...&lt;/s&gt;` tags.
+3. Preserve the entire file exactly: structure, ordering, indentation, arrays, IDs, punctuation, spacing, and all unchanged content.
+4. Never add, delete, rename, reorder, merge, split, abbreviate, paraphrase, or regenerate content. Copy unchanged lines verbatim from the source file.
+5. Never fabricate experience, responsibilities, technologies, projects, certifications, employers, metrics, or achievements which are not present in `my-skills.yaml`.
+6. Preserve valid YAML syntax. 
+
+Rules for sentence transformation:
+
+1. Applies to `summary`, `projects.bullets.text`, and `experience.bullets.text`.
+2. Evaluate sentence-by-sentence.
+3. Wrap only non-relevant, same or redundant sentences, experiences or responsibilities with `&lt;s&gt;...&lt;/s&gt;`.
+4. Leave relevant sentences, experiences or responsibilities unchanged.
+5. Never strike through an entire paragraph unless every sentence, experience, or responsibility is non-relevant.
+
+Rules for keyword or phrase transformation:
+
+1. Applies to `skills`.
+2. Evaluate every skill token and skill phrase independently.
+3. Treat list items as containers, not as a single string.
+4. For nested values inside parentheses, brackets, or comma-separated groups, evaluate each sub-skill independently.
+5. Preserve separators and formatting exactly.
+6. Wrap only non-relevant or redundant tokens or phrases with `&lt;s&gt;...&lt;/s&gt;` tags. Never wrap an entire list item if only some sub-skills are non-relevant.
+
+Perform a token-level transformation, not a rewrite.</pre
+      >
+    </section>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+══════════════════════════════════════════════
+📝 CHECKLIST (Do not copy this section)
+
+Note: These prompts are for Engineering Jobs, modify them as it fits you.
+
+Before sending this prompt, make sure you have provided:
+
+Files
+□ jd-keywords.yaml
+□ my-skills.yaml
+══════════════════════════════════════════════
+
+Prompt:
+--------Copy below here----------
+
+
+
+PROFESSIONAL SUMMARY:
+DevOps Engineer with a background in military aviation and an automation-first mindset. Skilled in Kubernetes, Terraform, AWS, Linux, and CI/CD pipelines. Built production-grade, cloud-native platforms with GitOps workflows, secrets management, persistent storage, and full observability stacks. Track record of automating infrastructure, eliminating bottlenecks, reducing root cause analysis time by ~20%, and achieving deployments in under 8 minutes.
+
+---
+
+Purpose:
+1. I'm applying for junior DevOps engineer role. Tailor my "PROFESSIONAL SUMMARY" to maximize ATS alignment for the target JD: `jd-keywords.yaml`, while preserving factual accuracy.
+
+Instructions:
+1. Always use the latest version of uploaded files for reference and ignore previous versions.
+2. Modify only the "PROFESSIONAL SUMMARY".
+3 Summary must catch the recruiter attention within first few seconds of reading.
+4. Prefer "required" technologies, engineering capabilities, and responsibilities over "preferred" one.
+5. When suitable, preserve the `jd-keywords.yaml` wording verbatim to maximize ATS keyword matching.
+6. If no relevant technology, engineering capability or responsibility can improve the summary, don't change it.
+7. Emphasise problem solving.
+8. Do not repeat "engineering capabilities", and "responsibilities" from `jd-keywords.yaml` in generated output.
+9. Every statement must be supported by `my-skills.yaml`. But, tailor the wording using `jd-keywords.yaml`. For eg:
+
+```eg-txt
+Suppose JD says:
+Built and automated CI/CD pipelines.
+
+My resume says:
+Productionized deployments by building and automating the CI/CD pipeline, reducing time to delivery by 8 mins.
+
+Tailored output:
+Built and automated CI/CD pipelines to productionize application deployments, reducing time to delivery by 8 mins.
+
+Key things to consider:
+Notice, how tailored version has kept the JD verbatim, transformed my sentence to improve ATS score and has barely increased word count. I want this kind of result.
+```
+
+Rules of summary writing:
+1. Keep summary in 420-450 characters only with 4 sentences:
+  i.    Sentence 1 → Change my designation only, as (DevOps / SRE / Cloud / AWS Engineer etc) stated by JD.
+  ii.   Sentence 2 → Include atleast 5 main tech stacks required by JD which are also present in my `my-skills.yaml`.
+  iii.  Sentence 3 → what I built? - keep it relevant to JD
+  iv.   Sentence 4 → Always include claims, with impact matrices. Keep it tailored to JD, but it should also support my `my-skills.yaml`.

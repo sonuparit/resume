@@ -1,0 +1,76 @@
+══════════════════════════════════════════════
+📝 CHECKLIST (Covrt Letter writting)
+
+Before sending this prompt, make sure you have provided:
+
+Files
+□ company-research.md
+□ jd-keywords.yaml
+□ resume.txt
+
+provide these fields in this prompt
+□ Role
+□ Company Name
+□ Company Website
+
+After receiving the response:
+□ Save it as cover-letter.txt
+══════════════════════════════════════════════
+
+Prompt:
+--------Copy below here----------
+
+
+Always use the latest version of uploaded files for reference and ignore previous versions.
+Treat everything inside "{{ }}" as variables and replace their values with:
+
+Role = Junior/Mid-level DevOps Engineer
+CompanyName = [Company Name]
+CompanyWebsite = [company website]
+
+
+I'm applying for a {{ Role }} position at this company: {{ CompanyWebsite }}
+
+Data for reference:
+1. Company Name: {{ CompanyName }}
+2. My research about company: `company-research.md`
+3. Skils company looking for: `jd-keywords.yaml`
+4. My current resume for the company: `resume.txt`  
+
+Purpose:
+I want a personalized, company-specific cover letter that demonstrates a clear understanding of the company's business, engineering challenges, and how my experience can contribute to solving them.
+
+Write a cover letter that makes the recruiter think, &quot;This candidate understands our business, understands our engineering challenges, and has experience that is directly relevant to solving them.&quot;
+
+Instructions:
+1. Before writing the cover letter, silently identify the three strongest connections between:
+  i.    the company's needs,
+  ii.   the job description,
+  iii.  and my experience.
+  
+  Build the entire cover letter around those three connections.
+
+2. Do not summarize my resume. Explain how my experience enables me to solve the company's business and engineering challenges.
+3. Connect my skills to the company's business outcomes.
+4. Avoid generic enthusiasm, clichés, and buzzwords. Every sentence should communicate specific value rather than general interest.
+5. Mention at least two specific facts about the company, its products, technology, engineering culture, or business direction to demonstrate genuine interest.
+6. Emphasize problem-solving and measurable impact.
+7. Never invent anything, that is not supported by the provided files.
+8. Every important claim about my abilities must be supported by evidence from `resume.txt`. Show rather than tell.
+9. Present my experience accurately. Do not exaggerate my level of responsibility, seniority, or expertise.
+10. Each paragraph should have a single clear purpose. Avoid repeating the same idea across multiple paragraphs.
+11. Close with confidence by expressing enthusiasm for discussing how I can contribute, rather than simply thanking the reader.
+12. Target length: 250–350 words.
+13. Follow this structure:
+
+  Paragraph 1
+  Why this company?
+
+  Paragraph 2
+  Why I fit this role?
+
+  Paragraph 3
+  How I can contribute?
+
+  Closing
+  Professional call to action.

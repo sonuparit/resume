@@ -1,6 +1,6 @@
 personal:
   name: Sonu Parit
-  title: DevOps / Cloud / SRE Engineer
+  title: DevOps Engineer
   locations:
   - Delhi NCR
   - Noida
@@ -13,44 +13,63 @@ personal:
 summary: DevOps Engineer with a background in military aviation and an automation-first
   mindset. Skilled in Kubernetes, Terraform, AWS, Linux, and CI/CD pipelines. Built
   production-grade, cloud-native platforms with GitOps workflows, secrets management,
-  persistent storage, and full observability stacks. <s>Track record of eliminating
+  persistent storage, and full observability stacks. Track record of eliminating
   bottlenecks, reducing downtime, automating repetitive tasks, and designing reliable
-  infrastructure solutions.</s>
+  infrastructure solutions.
 skills:
-  devops_cloud:
+  technologies:
   - Docker
   - Docker Compose
+  - Helm
+  - Helmfile
   - Kubernetes
-  - <s>Helm</s>
-  - <s>ArgoCD</s>
-  - <s>YAML</s>
+  - YAML
+  - Git
+  - GitHub
   - GitHub Actions
-  - CI/CD
-  - <s>Jenkins</s>
-  - GitOps
-  - <s>SQL</s>
-  - AWS (<s>EKS</s>,<s> EC2</s>,<s> IAM</s>,<s> VPC</s>,<s> S3</s>,<s> ECR</s>, AWS
-    Secrets Manager,<s> Lambda</s>,<s> Cloud Watch</s>)
-  iac:
-  - <s>Terraform</s>
-  - <s>Ansible</s>
-  - <s>Infrastructure as Code</s>
-  observability:
-  - <s>Prometheus</s>
-  - <s>Grafana</s>
-  - <s>Loki</s>
-  - <s>Alertmanager</s>
-  - <s>Exporters</s>
-  systems:
+  - Jenkins
+  - ArgoCD
+  - SQL
+  - MySQL
+  - PostgreSQL
+  - DynamoDB
+  - AWS
+  - EKS
+  - EC2
+  - IAM
+  - VPC
+  - S3
+  - ECR
+  - EBS
+  - Secrets Manager
+  - Lambda
+  - Terraform
+  - Ansible
+  - Prometheus
+  - Grafana
+  - Loki
   - Python
   - Bash
-  - <s>JavaScript</s>
-  - <s>Linux Administration </s>(<s>Xubuntu daily driver</s>)
-  - <s>Networking</s>
+  - JavaScript
+  
+  engineering_capabilities:
+  - GitOps
+  - Containerization
+  - Kubernetes Administration
+  - CI/CD Pipeline Development
+  - Secret Management
+  - Monitoring & Observability
+  - Log Management
+  - Infrastructure as Code (IaC)
+  - Configuration Management
+  - Infrastructure Automation
+  - Linux Administration (Xubuntu daily driver)
+  - Scripting
   - Troubleshooting
-  - <s>Root Cause Analysis </s>(<s>RCA</s>)
-  - <s>Incident Response</s>
-  - <s>Production Support</s>
+  - Root Cause Analysis (RCA)
+  - Incident Response
+  - Networking
+  
 projects:
 - id: proj1
   name: Productionizing a Microservices Application (Reverse-Engineered)
@@ -70,12 +89,12 @@ projects:
     text: Externalized 100% of hardcoded credentials by integrating External Secrets
       Operator with AWS Secrets Manager and IMDSv2-based IAM authentication.
   - id: p4
-    text: <s>Reduced container image size by 17% by switching to Amazon Linux 2023
-      minimal (AL2023-minimal) base images, while maintaining full glibc and dnf compatibility.</s>
+    text: Reduced container image size by 17% by switching to Amazon Linux 2023
+      minimal (AL2023-minimal) base images, while maintaining full glibc and dnf compatibility.
   - id: p5
-    text: <s>Established a complete monitoring and observability stack with Prometheus,
+    text: Established a complete monitoring and observability stack with Prometheus,
       Grafana, Loki, and Alertmanager, across 3 environments, enabling early infra/application
-      issues via Slack and email alerts.</s>
+      issues via Slack and email alerts.
 - id: proj2
   name: Reverse-engineered Terraform and built GitOps-Driven CI/CD pipeline
   github: https://github.com/sonuparit/terraform-gitops-pipeline
@@ -87,9 +106,9 @@ projects:
       stages, reducing provisioning complexity and troubleshooting scope by ~75%,
       and enabling consistent infra deployment.
   - id: p7
-    text: <s>Eliminated manual container build and release processes by implementing
+    text: Eliminated manual container build and release processes by implementing
       an automated CI workflow (trigger → build → tag → publish), removing human error
-      and accelerating deployment by ~20%.</s>
+      and accelerating deployment by ~20%.
   - id: p8
     text: Implemented GitOps-driven deployment workflows using ArgoCD ApplicationSet
       with a dedicated `gitops` branch as the single deployment trigger, isolating
@@ -107,9 +126,9 @@ projects:
       log paths and enabling safe unattended execution through validation, script
       locking, dry-run support, and idempotent scheduling.
   - id: p10
-    text: <s>Introduced disk and inode monitoring with Slack and email alerting, including
+    text: Introduced disk and inode monitoring with Slack and email alerting, including
       low-yield cleanup warnings below 100MB threshold, enabling early detection of
-      capacity issues before they impact platform stability.</s>
+      capacity issues before they impact platform stability.
 experience:
 - id: exp1
   company: DevOps Engineer
@@ -125,9 +144,9 @@ experience:
     text: Automated an end-to-end CI/CD pipeline using ArgoCD for GitOps-based continuous
       delivery, completing full deployments in under 8 minutes per release.
   - id: e3
-    text: <s>Built a complete observability stack, Prometheus and Grafana for metrics,
+    text: Built a complete observability stack, Prometheus and Grafana for metrics,
       Loki for centralized logging, and Alertmanager for alert routing, providing
-      real-time visibility across 3 environments (dev, stage, prod).</s>
+      real-time visibility across 3 environments (dev, stage, prod).
 - id: exp2
   company: Algo Trading
   organization: Self Employed
@@ -136,13 +155,13 @@ experience:
   end: Jul 2025
   bullets:
   - id: e4
-    text: <s>Developed an MT5 script for real-time, multi-object synchronization across
+    text: Developed an MT5 script for real-time, multi-object synchronization across
       multiple open charts of the same forex pair on any timeframe, improving multi-chart
-      analysis efficiency by 75%.</s>
+      analysis efficiency by 75%.
   - id: e5
-    text: <s>Automated market analysis workflows by creating 10+ custom MT5 indicators
+    text: Automated market analysis workflows by creating 10+ custom MT5 indicators
       and scripts according to needs, reducing human error by ~80% and improving decision-making
-      consistency.</s>
+      consistency.
 - id: exp3
   company: Indian Army
   organization: Aviation Technician
@@ -151,20 +170,20 @@ experience:
   end: Jul 2022
   bullets:
   - id: e6
-    text: <s>Responsible for preventive and corrective maintenance of military aircraft,
+    text: Responsible for preventive and corrective maintenance of military aircraft,
       daily inspection checks, log card management, component servicing and replacement,
-      and FDR data retrieval and analysis.</s>
+      and FDR data retrieval and analysis.
   - id: e7
-    text: <s>On own initiative, identified critical maintenance tracking gaps and
+    text: On own initiative, identified critical maintenance tracking gaps and
       designed a VBA-based lifecycle alerting system, generating real-time component
       expiry lists across all aircraft, reducing manual monitoring time by ~80%, and
-      cutting the risk of missed maintenance events by ~98%.</s> <s>Proved mission-critical
+      cutting the risk of missed maintenance events by ~98%. Proved mission-critical
       during the Pulwama attack, saving 10+ hours of daily manual checking and earning
-      a commendation from the OC.</s>
+      a commendation from the OC.
   - id: e8
-    text: <s>On own initiative, diagnosed and restored 10 Display Mission Computers
+    text: On own initiative, diagnosed and restored 10 Display Mission Computers
       (DMCs) deemed unrecoverable by the unit, increasing aircraft availability by
-      50% and recovering assets valued at over ~$1.8M USD.</s>
+      50% and recovering assets valued at over ~$1.8M USD.
 education:
 - id: edu1
   degree: Linux Administration Course (Distinction)

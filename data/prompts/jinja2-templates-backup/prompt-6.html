@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Prompt Viewer</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        margin: 40px;
+      }
+      .card {
+        background: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 24px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 12px;
+      }
+      pre {
+        white-space: pre-wrap;
+        word-break: break-word;
+        background: #fafafa;
+        padding: 16px;
+        border-radius: 8px;
+      }
+      .copy {
+        border: none;
+        background: #2563eb;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+      .copy:hover {
+        background: #1d4ed8;
+      }
+    </style>
+
+    <script>
+      async function copyPrompt(id, btn) {
+        await navigator.clipboard.writeText(
+          document.getElementById(id).innerText,
+        );
+        const old = btn.innerText;
+        btn.innerText = "✓";
+        setTimeout(() => (btn.innerText = old), 1200);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Prompt Document</h1>
+
+    <section class="card">
+      <div class="header">
+        <h2>Instructions</h2>
+      </div>
+      <pre>
+══════════════════════════════════════════════
+📝 CHECKLIST
+
+Before sending this prompt, make sure you have provided:
+
+Files
+□ company-research.md
+□ jd-keywords.yaml
+□ corrected-resume.yaml
+══════════════════════════════════════════════</pre
+      >
+    </section>
+
+    <section class="card">
+      <div class="header">
+        <h2>Prompt</h2>
+        <button class="copy" onclick="copyPrompt('prompt_0', this)">📋</button>
+      </div>
+      <pre id="prompt_0">
+I&#x27;m applying for a {{ Role }} position at this company: {{ CompanyWebsite }}
+
+Data for reference:
+1. Company Name: [Company Name]
+2. My research about company: `company-research.md`
+3. Skils company looking for: `jd-keywords.yaml`
+4. My current resume for the company: `corrected-resume.yaml`  
+
+Purpose:
+I want a personalized, company-specific cover letter that demonstrates a clear understanding of the company&#x27;s business, engineering challenges, and how my experience can contribute to solving them.
+
+Write a cover letter that makes the recruiter think, &quot;This candidate understands our business, understands our engineering challenges, and has experience that is directly relevant to solving them.&quot;
+
+Instructions:
+1. Before writing the cover letter, silently identify the three strongest connections between:
+  i.    the company&#x27;s needs,
+  ii.   the job description,
+  iii.  and my experience.
+  
+  Build the entire cover letter around those three connections.
+
+2. Do not summarize my resume. Explain how my experience enables me to solve the company&#x27;s business and engineering challenges.
+3. Connect my skills to the company&#x27;s business outcomes.
+4. Avoid generic enthusiasm, clichés, and buzzwords. Every sentence should communicate specific value rather than general interest.
+5. Mention atleast two specific facts about the company, its products, technology, engineering culture, or business direction to demonstrate genuine interest.
+6. Emphasize ownership, automation, reliability, problem-solving, systems thinking, continuous improvement, and measurable impact.
+7. Never invent projects, technologies, metrics, responsibilities, or business knowledge that is not supported by the provided files.
+8. Every important claim about my abilities must be supported by evidence from `corrected-resume.yaml`. Show rather than tell.
+9. Match the tone and communication style of the company based on its website, engineering blog, and public communications while maintaining professionalism.
+10. Present my experience accurately. Do not exaggerate my level of responsibility, seniority, or expertise.
+11. Each paragraph should have a single clear purpose. Avoid repeating the same idea across multiple paragraphs.
+12. Close with confidence by expressing enthusiasm for discussing how I can contribute, rather than simply thanking the reader.
+13. Target length: 250–350 words.
+14. Follow this structure:
+
+  Paragraph 1
+  Why this company?
+
+  Paragraph 2
+  Why I fit this role?
+
+  Paragraph 3
+  How I can contribute?
+
+  Closing
+  Professional call to action.</pre
+      >
+    </section>
+  </body>
+</html>

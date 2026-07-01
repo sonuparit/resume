@@ -1,0 +1,81 @@
+══════════════════════════════════════════════
+📝 CHECKLIST (Do not copy this section)
+
+Note: These prompts are for Engineering Jobs, modify them as it fits you.
+
+Before sending this prompt, make sure you have provided:
+
+Files
+□ jd.txt
+
+fields in this prompt
+□ Role
+□ Company Website
+□ Recruiter Position
+══════════════════════════════════════════════
+
+
+Prompt:
+--------Copy below here----------
+
+
+Always use the latest version of uploaded files for reference and ignore previous versions.
+Treat everything inside "{{ }}" as variables and replace their values with:
+
+Role = Junior/Mid-level DevOps Engineer
+CompanyWebsite = [company website]
+RecruiterPosition = Senior DevOps Engineer
+
+1. I'm applying for a {{ Role }} position at this company: {{ CompanyWebsite }}
+3. This is JD: `jd.txt`
+
+Role:
+Act as the {{ RecruiterPosition }}, responsible for filling this role.
+
+Purpose:
+Create a downloadable `jd-keywords.yaml` file, that contains the Highest-priority technologies, engineering capabilities and responsibilities that you are looking in the resume, that can pass your ATS.
+
+Rules for file creation:
+1. Extract only "technologies", "engineering capabilities", and "responsibilities" that explicitly appear in the Job Description (JD) verbatim, eg:
+```eg-txt
+do not output "AWS" if the JD only says "cloud platform", keep output as "cloud platform".
+```
+2. Do not introduce any information that does not explicitly appear in the JD.
+3. Preserve the original capitalization, wording, grammar, punctuation, abbreviations, and verb forms exactly as written in the JD.
+4. If "engineering capabilities" or "responsibility" spans multiple words, preserve it verbatim.
+5. Keep the format for `jd-keywords.yaml` file, like this:
+
+```yaml
+required:
+  technologies:
+  - technology 1
+  - technology 2
+  ...
+  
+  engineering_capabilities:
+  - capability 1
+  - capability 2
+  ...
+  
+  responsibilities:
+  - responsibility 1
+  - responsibility 2
+  ...
+
+preferred:
+  technologies:
+  - technology 1
+  - technology 2
+  ...
+  
+  engineering_capabilities:
+  - capability 1
+  - capability 2
+  ...
+  
+  responsibilities:
+  - responsibility 1
+  - responsibility 2
+  ...
+
+```

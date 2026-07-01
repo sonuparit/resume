@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Prompt Viewer</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        margin: 40px;
+      }
+
+      .card {
+        background: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 24px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 12px;
+      }
+
+      pre {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        background: #fafafa;
+        padding: 16px;
+        border-radius: 8px;
+      }
+
+      button.copy {
+        border: none;
+        background: #2563eb;
+        color: #fff;
+        padding: 8px 12px;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+
+      button.copy:hover {
+        background: #1d4ed8;
+      }
+    </style>
+    <script>
+      async function copyPrompt(id, btn) {
+        const t = document.getElementById(id).innerText;
+        await navigator.clipboard.writeText(t);
+        const old = btn.innerText;
+        btn.innerText = "✓";
+        setTimeout(() => (btn.innerText = old), 1200);
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>Prompt Document</h1>
+
+    <section class="card">
+      <div class="header">
+        <h2>Instructions</h2>
+      </div>
+      <pre>
+══════════════════════════════════════════════
+📝 CHECKLIST
+
+Note: These prompts are for Engineering Jobs, modify them as it fits you.
+
+Before sending this prompt, make sure you have provided:
+
+Files
+□ my-skills.yaml
+
+filled required-data.yaml file with
+□ Role
+□ Company Name
+□ Company Website
+□ Recruiter Position
+
+After receiving the response:
+□ Save it as company-research.md
+□ Save the Job Description as jd.txt
+══════════════════════════════════════════════
+</pre
+      >
+    </section>
+
+    <section class="card">
+      <div class="header">
+        <h2>Prompt</h2>
+        <button class="copy" onclick="copyPrompt('p1', this)" title="Copy">
+          📋
+        </button>
+      </div>
+      <pre id="p1">
+Purpose:
+I&#x27;m applying for a {{ Role }} position at this company: {{ CompanyWebsite }}
+
+Your objective is to help me understand the company deeply so I can:
+
+1. Tailor my resume and cover letter
+2. Prepare for interviews
+3. Demonstrate genuine business understanding
+4. Identify where I can realistically add value as a {{ Role }}
+
+Role:
+Act as an investigative journalist, technology analyst, and DevOps consultant.
+
+Search the company&#x27;s official website, engineering blogs, documentation, LinkedIn, Reddit, GitHub, news articles, interviews, podcasts, conference talks, employee reviews, forums, and other credible public sources.
+
+Prefer official sources whenever possible. Use community discussions only to provide additional context and clearly distinguish facts from opinions.
+
+Research Tasks:
+  1. Company Overview:
+    i.    What does the company do?
+    ii.   What products or services does it offer?
+    iii.  Who are its customers?
+    iv.   Which industries does it serve?
+  
+  2. Business Model:
+    i.    How does the company generate revenue?
+    ii.   What makes it competitive?
+    iii.  What differentiates it from competitors?
+    
+  3. Company Direction:
+    i.    Recent announcements
+    ii.   New products
+    iii.  Expansion plans
+    iv.   Where the company appears to be heading over the next 2–5 years
+
+  4. Based on public information, identify their engineering challenges, and present them. Never present speculation as fact.
+
+  6. How I Can Contribute:
+    i.    Assume I join as a Junior/Mid-level {{ Role }}. Suggest practical ways I could contribute using skills I have in `my-skills.yaml`
+    ii.   Only recommend contributions that logically align with the company&#x27;s business and engineering needs.
+
+Interview Preparation:
+  1.  Generate:
+    i.    Five business-focused interview talking points
+    ii.   Five DevOps-specific talking points
+    iii.  Three thoughtful questions I can ask the interviewer
+      
+Output Requirements:
+  1.  Keep the report concise, practical, and easy to skim.
+  2.  Separate facts from assumptions.
+  3.  Prioritize actionable insights over company history.
+  4.  Avoid marketing language.
+  5.  Use bullet points where appropriate.
+  6.  If evidence is weak or unavailable, explicitly state that instead of guessing.
+</pre
+      >
+    </section>
+  </body>
+</html>

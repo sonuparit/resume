@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Prompt Viewer</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        margin: 40px;
+      }
+      .card {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        margin-bottom: 24px;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 12px;
+      }
+      pre {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        background: #fafafa;
+        padding: 16px;
+        border-radius: 8px;
+      }
+      .copy {
+        border: none;
+        background: #2563eb;
+        color: #fff;
+        padding: 8px 12px;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+    </style>
+    <script>
+      async function copyPrompt(id, b) {
+        await navigator.clipboard.writeText(
+          document.getElementById(id).innerText,
+        );
+        const old = b.innerText;
+        b.innerText = "✓";
+        setTimeout(() => (b.innerText = old), 1200);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Prompt Document</h1>
+    <section class="card">
+      <div class="header"><h2>Instructions</h2></div>
+      <pre>
+══════════════════════════════════════════════
+📝 CHECKLIST
+
+Before sending this prompt, make sure you have provided:
+
+Files
+□ jd-keywords.yaml
+□ resume.yaml
+══════════════════════════════════════════════</pre
+      >
+    </section>
+    <section class="card">
+      <div class="header">
+        <h2>Prompt</h2>
+        <button class="copy" onclick="copyPrompt('p0', this)">📋</button>
+      </div>
+      <pre id="p0">
+I&#x27;m applying for a {{ Role }} position at this company: {{ CompanyWebsite }}      
+
+`jd-keywords.yaml` contains all the important keywords, phrases and responsibilities, this company is looking for.
+
+Purpose:
+I want to know exactly which keywords, phrases, and responsibilities are absent in my resume, so that, I can put them in my resume, to increase my chances to pass the ATS filter.
+
+Instructions:
+
+Create a downloadable `missing-keywords.yaml` file, that contains all the keywords, phrases, and responsibilities that are not present in my `resume.yaml` file.
+
+Rules for file creation:
+
+1. Use `jd-keywords.yaml` file as actual ATS filter.
+2. A keyword, phrase, or responsibility is considered present only if it appears explicitly in `resume.yaml` file. Do not infer synonyms, abbreviations, or equivalent technologies.
+3. Do not duplicate keywords, phrases or responsibilities. Preserve abbreviations exactly as written.
+4. Keep the format for `missing-keywords.yaml` file, like this:
+
+```yaml
+keywords_not_present:
+- keyword 1
+- keyword 2
+...
+
+phrases_not_present:
+- phrase 1
+- phrase 2
+...
+
+responsibilities_not_present:
+- responsibility 1
+- responsibility 2
+...
+
+
+```</pre
+      >
+    </section>
+  </body>
+</html>

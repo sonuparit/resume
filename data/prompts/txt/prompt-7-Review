@@ -1,3 +1,5 @@
+--------------INSTRUCTIONS-------------
+
 ══════════════════════════════════════════════
 📝 HUMAN CHECKLIST (Ignore this section)
 
@@ -23,7 +25,7 @@ After receiving the response:
 □ Save it as application-review.md
 ══════════════════════════════════════════════
 
-Hey chatGPT!
+--------------PROMPT--------------
 
 Purpose:
 Want a personalized, company-specific cover letter that demonstrates a clear understanding of the company's business, engineering challenges, and how my experience can contribute to solving them.

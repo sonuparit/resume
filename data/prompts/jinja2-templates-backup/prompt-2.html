@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Prompt Viewer</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        margin: 40px;
+      }
+      .card {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        margin-bottom: 24px;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 12px;
+      }
+      pre {
+        white-space: pre-wrap;
+        background: #fafafa;
+        padding: 16px;
+        border-radius: 8px;
+      }
+      .copy {
+        border: none;
+        background: #2563eb;
+        color: #fff;
+        padding: 8px 12px;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+    </style>
+    <script>
+      async function copyPrompt(id, b) {
+        await navigator.clipboard.writeText(
+          document.getElementById(id).innerText,
+        );
+        let o = b.innerText;
+        b.innerText = "✓";
+        setTimeout(() => (b.innerText = o), 1200);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Prompt Document</h1>
+    <section class="card">
+      <div class="header"><h2>Instructions</h2></div>
+      <pre>
+══════════════════════════════════════════════
+📝 CHECKLIST
+
+Before sending this prompt, make sure you have provided:
+
+Files
+□ company-research.md
+□ jd.txt
+══════════════════════════════════════════════</pre
+      >
+    </section>
+    <section class="card">
+      <div class="header">
+        <h2>Prompt</h2>
+        <button class="copy" onclick="copyPrompt('p0', this)">📋</button>
+      </div>
+      <pre id="p0">
+1. I&#x27;m applying for a {{ Role }} position at this company: {{ CompanyWebsite }}
+2. This is my research for this company: `company-research.md`
+3. This is the JD:
+
+-------------------JD START-------------------
+
+{{ JD }}
+
+-------------------JD END-------------------
+
+Prompt 1:
+
+Purpose:
+Your objective is to help me understand what kind of person would be best fit for the company, and how I can present myself as one.
+
+Role:
+Act as the Hiring Manager, {{ RecruiterPosition }}, and Recruiter responsible for filling this role and ans these questions:
+
+1. Based only on this JD, what knowledge, experience, behaviors, and skills are you actually looking for?
+2. What business or engineering problems is this role expected to solve?
+3. Based on the JD and company context, why do you think this role exists today?
+4. What kind of candidate would feel like a SAFE choice?
+5. What kind of candidate would feel RISKY?
+6. If you had only 30 seconds to decide whether to interview me, what evidence would you expect to see on my resume?
+
+Keep it simple, clear, and actionable. Do not exceed the brief requirements.
+
+---
+
+Prompt 2:
+
+Role:
+Act as the Hiring Manager, {{ RecruiterPosition }}, and Recruiter responsible for filling this role.
+
+Purpose:
+Create a downloadable `jd-keywords.yaml` file, that contains the Highest-priority &quot;keywords&quot;, &quot;phrases&quot;, and &quot;responsibilities&quot; that you are looking in the resume, that can pass your ATS.
+
+Rules for file creation:
+1. Extract keywords, phrases, and responsibilities from the JD. Do not introduce new technologies, certifications, tools, or skills that are absent from the JD.
+2. Do not infer synonyms, abbreviations, or equivalent technologies. Preserve abbreviations exactly as written.
+3. Do not create, infer, duplicate, or reword keywords or phrases. Every output entry must originate from JD.
+4. Keep the format for `jd-keywords.yaml` file, like this:
+
+```yaml
+keywords:
+- keyword 1
+- keyword 2
+...
+
+phrases:
+- phrase 1
+- phrase 2
+...
+
+responsibilities:
+- responsibility 1
+- responsibility 2
+...
+
+```</pre
+      >
+    </section>
+  </body>
+</html>

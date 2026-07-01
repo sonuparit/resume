@@ -1,3 +1,5 @@
+--------------INSTRUCTIONS-------------
+
 ══════════════════════════════════════════════
 📝 HUMAN CHECKLIST (Ignore this section)
 
@@ -19,10 +21,10 @@ After receiving the response:
 □ Save the Job Description as jd.txt
 ══════════════════════════════════════════════
 
-Hey ChatGPT!
+--------------PROMPT--------------
 
 Purpose:
-I'm applying for a Junior/Mid-DevOps Engineer position at this company: [company website]
+I'm applying for a [Role] position at this company: [company website]
 
 Your objective is to help me understand the company deeply so I can:
 
